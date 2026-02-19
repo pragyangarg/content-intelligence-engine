@@ -31,3 +31,6 @@ def create_content(content: ContentCreate, db: Session = Depends(get_db)):
 @router.get("/contents", response_model=List[ContentResponse])
 def get_contents(db: Session = Depends(get_db)):
     return db.query(Content).all()
+
+
+

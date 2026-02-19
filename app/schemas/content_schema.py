@@ -1,9 +1,11 @@
-from pydantic import BaseModel
+from pydantic import BaseModel, ConfigDict
 from typing import Optional
+
 
 class ContentCreate(BaseModel):
     title: str
     source: str
+
 
 class ContentResponse(BaseModel):
     id: int
@@ -12,5 +14,4 @@ class ContentResponse(BaseModel):
     summary: Optional[str]
     sentiment: Optional[str]
 
-    class Config:
-        orm_mode = True
+    model_config = ConfigDict(from_attributes=True)
