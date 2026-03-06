@@ -6,6 +6,8 @@ from app.api.routes import router
 
 from app.services.summarizer import SummarizerService
 from app.services.sentiment import SentimentService
+from app.services.workflow import WorkflowEngine
+from app.services.rss_monitor import RSSMonitor
 
 
 app = FastAPI(
@@ -24,11 +26,14 @@ app.include_router(router)
 # Global model references (initially empty)
 summarizer_service = None
 sentiment_service = None
+rss_monitor = None
+workflow_engine = None
 
 
 @app.on_event("startup")
 def load_models():
-    global summarizer_service, sentiment_service
+    
+    global summarizer_service, sentiment_service, workflow_engine, rss_monitor
 
     print("Loading AI models...")
 
@@ -40,7 +45,8 @@ def load_models():
         summarizer_service,
         sentiment_service
     )
-    
+
+    rss_monitor = RSSMonitor(workflow_engine)
     print("Models loaded successfully.")
 
 
@@ -66,7 +72,12 @@ def process_content_endpoint(
 ):
     return workflow_engine.process_content(title, source, text, db)
 
-
+@app.post("/process-rss")
+def process_rss_feed(
+    rss_url: str,
+    db: Session = Depends(get_db)
+):
+    return rss_monitor.fetch_and_process(rss_url, db)
 
 @app.get("/")
 def root():
@@ -91,6 +102,3 @@ def test_sentiment():
     return result
 
 
-from app.services.workflow import WorkflowEngine
-
-workflow_engine = None

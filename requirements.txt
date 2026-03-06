@@ -4,3 +4,4 @@ sqlalchemy==2.0.29
 pydantic==2.6.4
 transformers==4.38.2
 torch==2.2.2
+feedparser
