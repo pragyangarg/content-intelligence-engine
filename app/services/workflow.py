@@ -8,12 +8,20 @@ class WorkflowEngine:
         self.sentiment = sentiment_service
 
     def process_content(self, title: str, source: str, text: str, db: Session):
+        # Step 1.0: Check for duplication
+        existing = db.query(Content).filter(Content.title == title).first()
+
+        if existing:
+            return {
+                "message": "Article already processed",
+                "title": title
+            }
+
         # Step 1: Generate summary
         summary = self.summarizer.summarize(text)
 
         # Step 2: Analyze sentiment
         sentiment_result = self.sentiment.analyze(summary)
-
         # Step 3: Save to database
         db_content = Content(
             title=title,

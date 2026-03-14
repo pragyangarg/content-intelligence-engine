@@ -5,17 +5,17 @@ class SummarizerService:
         # Load model only once during startup
         self.summarizer = pipeline(
             "summarization",
-            model="facebook/bart-large-cnn"
+            model="facebook/bart-large-cnn",
+            framework="pt"
         )
-
     def summarize(self, text: str) -> str:
         if len(text.strip()) == 0:
             return ""
 
         result = self.summarizer(
             text,
-            max_length=130,
-            min_length=30,
+            max_length=60,
+            min_length=10,
             do_sample=False
         )
 

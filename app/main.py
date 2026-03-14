@@ -8,6 +8,17 @@ from app.services.summarizer import SummarizerService
 from app.services.sentiment import SentimentService
 from app.services.workflow import WorkflowEngine
 from app.services.rss_monitor import RSSMonitor
+from app.services.scheduler import Scheduler
+from app.models.database import SessionLocal
+import os
+from dotenv import load_dotenv
+load_dotenv()
+import logging
+
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
 
 
 app = FastAPI(
@@ -28,14 +39,16 @@ summarizer_service = None
 sentiment_service = None
 rss_monitor = None
 workflow_engine = None
+scheduler = None
+
 
 
 @app.on_event("startup")
 def load_models():
     
-    global summarizer_service, sentiment_service, workflow_engine, rss_monitor
+    global summarizer_service, sentiment_service, workflow_engine, rss_monitor, scheduler
 
-    print("Loading AI models...")
+    logger.info("Loading AI models...")
 
     summarizer_service = SummarizerService()
     sentiment_service = SentimentService()
@@ -47,13 +60,21 @@ def load_models():
     )
 
     rss_monitor = RSSMonitor(workflow_engine)
-    print("Models loaded successfully.")
+    logger.info("Models loaded successfully.")
 
+    scheduler = Scheduler(rss_monitor, SessionLocal)
+
+    rss_url = os.getenv("RSS_FEED_URL")
+    interval = int(os.getenv("SCHEDULER_INTERVAL"))
+
+    scheduler.start(
+        rss_url,
+        interval=interval
+    )
 
 
 from fastapi import Depends
 from sqlalchemy.orm import Session
-from app.models.database import SessionLocal
 
 def get_db():
     db = SessionLocal()
@@ -83,6 +104,10 @@ def process_rss_feed(
 def root():
     return {"message": "Content Intelligence Engine is running"}
 
+
+@app.get("/health")
+def health_check():
+    return {"status": "ok"}
 
 @app.get("/test-summary")
 def test_summary():
