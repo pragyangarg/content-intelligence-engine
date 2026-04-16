@@ -3,6 +3,7 @@ from sqlalchemy.orm import Session
 from app.models.database import SessionLocal
 from app.models.content import Content
 from app.schemas.content_schema import ContentCreate, ContentResponse
+from app.services.content_formatter import normalize_content_fields
 from typing import List
 
 router = APIRouter()
@@ -30,7 +31,23 @@ def create_content(content: ContentCreate, db: Session = Depends(get_db)):
 
 @router.get("/contents", response_model=List[ContentResponse])
 def get_contents(db: Session = Depends(get_db)):
-    return db.query(Content).all()
+    contents = db.query(Content).all()
+
+    response_items = []
+
+    for item in contents:
+        summary, sentiment = normalize_content_fields(item.summary, item.sentiment)
+        response_items.append(
+            ContentResponse(
+                id=item.id,
+                title=item.title,
+                source=item.source,
+                summary=summary,
+                sentiment=sentiment
+            )
+        )
+
+    return response_items
 
 
 

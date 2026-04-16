@@ -1,5 +1,7 @@
 from sqlalchemy.orm import Session
+
 from app.models.content import Content
+from app.services.content_formatter import normalize_content_fields
 
 
 class WorkflowEngine:
@@ -8,7 +10,7 @@ class WorkflowEngine:
         self.sentiment = sentiment_service
 
     def process_content(self, title: str, source: str, text: str, db: Session):
-        # Step 1.0: Check for duplication
+        # Step 1 - Check duplicate
         existing = db.query(Content).filter(Content.title == title).first()
 
         if existing:
@@ -17,17 +19,20 @@ class WorkflowEngine:
                 "title": title
             }
 
-        # Step 1: Generate summary
+        # Step 2 - Process content with shared services
         summary = self.summarizer.summarize(text)
-
-        # Step 2: Analyze sentiment
         sentiment_result = self.sentiment.analyze(summary)
-        # Step 3: Save to database
+        sentiment_label = sentiment_result.get("label")
+
+        # Step 3 - Normalize fields
+        summary, sentiment_label = normalize_content_fields(summary, sentiment_label)
+
+        # Step 4 - Save to database
         db_content = Content(
             title=title,
             source=source,
             summary=summary,
-            sentiment=sentiment_result["label"]
+            sentiment=sentiment_label
         )
 
         db.add(db_content)
@@ -38,5 +43,5 @@ class WorkflowEngine:
             "id": db_content.id,
             "title": title,
             "summary": summary,
-            "sentiment": sentiment_result
+            "sentiment": sentiment_label
         }
