@@ -1,0 +1,830 @@
+{
+  "summary": {
+    "total_samples": 22,
+    "version_a_baseline": {
+      "faithfulness": 0.7664,
+      "answer_relevance": 1.0,
+      "context_relevance": 1.0,
+      "context_recall": 0.7208
+    },
+    "version_b_agentic": {
+      "faithfulness": 0.7536,
+      "answer_relevance": 1.0,
+      "context_relevance": 1.0,
+      "context_recall": 0.7111
+    },
+    "improvement_percentage": {
+      "faithfulness": -1.67,
+      "answer_relevance": 0.0,
+      "context_relevance": 0.0,
+      "context_recall": -1.35
+    }
+  },
+  "version_a_baseline_details": [
+    {
+      "id": 1,
+      "question": "What architecture powers the latest NVIDIA AI GPU?",
+      "ground_truth": "The latest NVIDIA AI GPU is powered by the Blackwell architecture delivering high AI compute and energy efficiency.",
+      "answer": "According to Benchmark doc: What architecture powers the latest NVIDIA AI GPU?, Benchmark doc: What architecture powers the latest NVIDIA AI GPU? NVIDIA announced its newest Blackwell GPU architecture delivering breakthrough AI compute and energy efficiency for generative models.\n\nSources:\n1. Benchmark doc: What architecture powers the latest NVIDIA AI GPU? - Evaluation Corpus (https://eval.example.com/1)\n2. Benchmark doc: What is the key advantage of fault-tolerant topological qubits in quantum computing? - Evaluation Corpus (https://eval.example.com/2)\n3. Benchmark doc: How is artificial intelligence transforming enterprise workflows? - Evaluation Corpus (https://eval.example.com/4)\n4. Benchmark doc: What framework coordinates the RAG workflow graph? - Evaluation Corpus (https://eval.example.com/10)\n5. Benchmark doc: What is the primary RSS feed ingested by default? - Evaluation Corpus (https://eval.example.com/18)",
+      "contexts": [
+        "Benchmark doc: What architecture powers the latest NVIDIA AI GPU? NVIDIA announced its newest Blackwell GPU architecture delivering breakthrough AI compute and energy efficiency for generative models.",
+        "Benchmark doc: What is the key advantage of fault-tolerant topological qubits in quantum computing? Physicists developed a fault-tolerant topological qubit system operating at higher temperatures.",
+        "Benchmark doc: How is artificial intelligence transforming enterprise workflows? Artificial intelligence is helping organizations automate repetitive tasks, improve decisions, and uncover insights from large volumes of content.",
+        "Benchmark doc: What framework coordinates the RAG workflow graph? LangGraph compiles a StateGraph connecting query analysis, vector search, filtering, and answer generation.",
+        "Benchmark doc: What is the primary RSS feed ingested by default? The default RSS feed URL in the configuration points to TechCrunch."
+      ],
+      "metrics": {
+        "faithfulness": 0.7759,
+        "answer_relevance": 1.0,
+        "context_relevance": 1.0,
+        "context_recall": 0.8462
+      }
+    },
+    {
+      "id": 2,
+      "question": "What is the key advantage of fault-tolerant topological qubits in quantum computing?",
+      "ground_truth": "Fault-tolerant topological qubits provide stability and operate at higher temperatures for scalable quantum computing.",
+      "answer": "According to Benchmark doc: What is the key advantage of fault-tolerant topological qubits in quantum computing?, Benchmark doc: What is the key advantage of fault-tolerant topological qubits in quantum computing? Physicists developed a fault-tolerant topological qubit system operating at higher temperatures.\n\nSources:\n1. Benchmark doc: What is the key advantage of fault-tolerant topological qubits in quantum computing? - Evaluation Corpus (https://eval.example.com/2)\n2. Benchmark doc: What architecture powers the latest NVIDIA AI GPU? - Evaluation Corpus (https://eval.example.com/1)\n3. Benchmark doc: When does the system trigger web search fallback? - Evaluation Corpus (https://eval.example.com/11)\n4. Benchmark doc: What does the GET /search endpoint do? - Evaluation Corpus (https://eval.example.com/22)\n5. Benchmark doc: What distance metric is configured for the ChromaDB collection? - Evaluation Corpus (https://eval.example.com/17)",
+      "contexts": [
+        "Benchmark doc: What is the key advantage of fault-tolerant topological qubits in quantum computing? Physicists developed a fault-tolerant topological qubit system operating at higher temperatures.",
+        "Benchmark doc: What architecture powers the latest NVIDIA AI GPU? NVIDIA announced its newest Blackwell GPU architecture delivering breakthrough AI compute and energy efficiency for generative models.",
+        "Benchmark doc: When does the system trigger web search fallback? When local vector search yields no documents above the similarity threshold, the workflow triggers DuckDuckGo web search.",
+        "Benchmark doc: What does the GET /search endpoint do? GET /search accepts query and limit parameters and returns matching chunks with similarity scores.",
+        "Benchmark doc: What distance metric is configured for the ChromaDB collection? The ChromaDB collection is initialized with HNSW cosine distance space."
+      ],
+      "metrics": {
+        "faithfulness": 0.7358,
+        "answer_relevance": 1.0,
+        "context_relevance": 1.0,
+        "context_recall": 0.6923
+      }
+    },
+    {
+      "id": 3,
+      "question": "How did renewable energy installations perform this year?",
+      "ground_truth": "Solar and wind installations achieved record capacity globally this year, reducing coal dependence.",
+      "answer": "According to Benchmark doc: How did renewable energy installations perform this year?, Benchmark doc: How did renewable energy installations perform this year? Solar and wind installations achieved record capacity globally this year, reducing coal dependence. According to Benchmark doc: What architecture powers the latest NVIDIA AI GPU?, Benchmark doc: What architecture powers the latest NVIDIA AI GPU? NVIDIA announced its newest Blackwell GPU architecture delivering breakthrough AI compute and energy efficiency for generative models.\n\nSources:\n1. Benchmark doc: How did renewable energy installations perform this year? - Evaluation Corpus (https://eval.example.com/3)\n2. Benchmark doc: What architecture powers the latest NVIDIA AI GPU? - Evaluation Corpus (https://eval.example.com/1)\n3. Benchmark doc: What framework coordinates the RAG workflow graph? - Evaluation Corpus (https://eval.example.com/10)\n4. Benchmark doc: What information is included in generated citations? - Evaluation Corpus (https://eval.example.com/12)\n5. Benchmark doc: What endpoint processes raw user queries through the agentic RAG workflow? - Evaluation Corpus (https://eval.example.com/19)",
+      "contexts": [
+        "Benchmark doc: How did renewable energy installations perform this year? Solar and wind installations achieved record capacity globally this year, reducing coal dependence.",
+        "Benchmark doc: What architecture powers the latest NVIDIA AI GPU? NVIDIA announced its newest Blackwell GPU architecture delivering breakthrough AI compute and energy efficiency for generative models.",
+        "Benchmark doc: What framework coordinates the RAG workflow graph? LangGraph compiles a StateGraph connecting query analysis, vector search, filtering, and answer generation.",
+        "Benchmark doc: What information is included in generated citations? Every generated response lists citations with article title, source publication, and canonical URL.",
+        "Benchmark doc: What endpoint processes raw user queries through the agentic RAG workflow? The POST /ask endpoint receives a query and invokes the LangGraph agentic RAG workflow."
+      ],
+      "metrics": {
+        "faithfulness": 0.7879,
+        "answer_relevance": 1.0,
+        "context_relevance": 1.0,
+        "context_recall": 1.0
+      }
+    },
+    {
+      "id": 4,
+      "question": "How is artificial intelligence transforming enterprise workflows?",
+      "ground_truth": "AI helps organizations automate repetitive tasks, improve decision-making, and uncover insights without manual review.",
+      "answer": "According to Benchmark doc: How is artificial intelligence transforming enterprise workflows?, Benchmark doc: How is artificial intelligence transforming enterprise workflows? Artificial intelligence is helping organizations automate repetitive tasks, improve decisions, and uncover insights from large volumes of content.\n\nSources:\n1. Benchmark doc: How is artificial intelligence transforming enterprise workflows? - Evaluation Corpus (https://eval.example.com/4)\n2. Benchmark doc: What endpoint processes raw user queries through the agentic RAG workflow? - Evaluation Corpus (https://eval.example.com/19)\n3. Benchmark doc: What framework coordinates the RAG workflow graph? - Evaluation Corpus (https://eval.example.com/10)\n4. Benchmark doc: When does the system trigger web search fallback? - Evaluation Corpus (https://eval.example.com/11)\n5. Benchmark doc: What architecture powers the latest NVIDIA AI GPU? - Evaluation Corpus (https://eval.example.com/1)",
+      "contexts": [
+        "Benchmark doc: How is artificial intelligence transforming enterprise workflows? Artificial intelligence is helping organizations automate repetitive tasks, improve decisions, and uncover insights from large volumes of content.",
+        "Benchmark doc: What endpoint processes raw user queries through the agentic RAG workflow? The POST /ask endpoint receives a query and invokes the LangGraph agentic RAG workflow.",
+        "Benchmark doc: What framework coordinates the RAG workflow graph? LangGraph compiles a StateGraph connecting query analysis, vector search, filtering, and answer generation.",
+        "Benchmark doc: When does the system trigger web search fallback? When local vector search yields no documents above the similarity threshold, the workflow triggers DuckDuckGo web search.",
+        "Benchmark doc: What architecture powers the latest NVIDIA AI GPU? NVIDIA announced its newest Blackwell GPU architecture delivering breakthrough AI compute and energy efficiency for generative models."
+      ],
+      "metrics": {
+        "faithfulness": 0.7705,
+        "answer_relevance": 1.0,
+        "context_relevance": 1.0,
+        "context_recall": 0.5714
+      }
+    },
+    {
+      "id": 5,
+      "question": "What model does the content summarizer service utilize?",
+      "ground_truth": "The content summarizer service uses the facebook/bart-large-cnn transformer model.",
+      "answer": "According to Benchmark doc: What model does the content summarizer service utilize?, Benchmark doc: What model does the content summarizer service utilize? The summarizer service runs facebook/bart-large-cnn for abstractive text summarization. According to Benchmark doc: What model does the sentiment analysis service employ?, Benchmark doc: What model does the sentiment analysis service employ? Sentiment classification uses distilbert-base-uncased-finetuned-sst-2-english to score positive and negative sentiment.\n\nSources:\n1. Benchmark doc: What model does the content summarizer service utilize? - Evaluation Corpus (https://eval.example.com/5)\n2. Benchmark doc: What model does the sentiment analysis service employ? - Evaluation Corpus (https://eval.example.com/6)\n3. Benchmark doc: What endpoint processes raw user queries through the agentic RAG workflow? - Evaluation Corpus (https://eval.example.com/19)\n4. Benchmark doc: What information is included in generated citations? - Evaluation Corpus (https://eval.example.com/12)\n5. Benchmark doc: How are long documents handled before generating embeddings? - Evaluation Corpus (https://eval.example.com/16)",
+      "contexts": [
+        "Benchmark doc: What model does the content summarizer service utilize? The summarizer service runs facebook/bart-large-cnn for abstractive text summarization.",
+        "Benchmark doc: What model does the sentiment analysis service employ? Sentiment classification uses distilbert-base-uncased-finetuned-sst-2-english to score positive and negative sentiment.",
+        "Benchmark doc: What endpoint processes raw user queries through the agentic RAG workflow? The POST /ask endpoint receives a query and invokes the LangGraph agentic RAG workflow.",
+        "Benchmark doc: What information is included in generated citations? Every generated response lists citations with article title, source publication, and canonical URL.",
+        "Benchmark doc: How are long documents handled before generating embeddings? Long texts are broken into chunks of 300 words with 50 words of overlap before generating embeddings."
+      ],
+      "metrics": {
+        "faithfulness": 0.7879,
+        "answer_relevance": 1.0,
+        "context_relevance": 1.0,
+        "context_recall": 0.9
+      }
+    },
+    {
+      "id": 6,
+      "question": "What model does the sentiment analysis service employ?",
+      "ground_truth": "The sentiment analysis service uses distilbert-base-uncased-finetuned-sst-2-english.",
+      "answer": "According to Benchmark doc: What model does the sentiment analysis service employ?, Benchmark doc: What model does the sentiment analysis service employ? Sentiment classification uses distilbert-base-uncased-finetuned-sst-2-english to score positive and negative sentiment. According to Benchmark doc: What model does the content summarizer service utilize?, Benchmark doc: What model does the content summarizer service utilize? The summarizer service runs facebook/bart-large-cnn for abstractive text summarization. According to Benchmark doc: How does query analysis improve search precision?, Benchmark doc: How does query analysis improve search precision? Query analysis removes conversational filler words like 'please tell me' to produce concise keyword queries.\n\nSources:\n1. Benchmark doc: What model does the sentiment analysis service employ? - Evaluation Corpus (https://eval.example.com/6)\n2. Benchmark doc: What model does the content summarizer service utilize? - Evaluation Corpus (https://eval.example.com/5)\n3. Benchmark doc: How does query analysis improve search precision? - Evaluation Corpus (https://eval.example.com/14)\n4. Benchmark doc: What framework coordinates the RAG workflow graph? - Evaluation Corpus (https://eval.example.com/10)\n5. Benchmark doc: What does the /health endpoint return? - Evaluation Corpus (https://eval.example.com/21)",
+      "contexts": [
+        "Benchmark doc: What model does the sentiment analysis service employ? Sentiment classification uses distilbert-base-uncased-finetuned-sst-2-english to score positive and negative sentiment.",
+        "Benchmark doc: What model does the content summarizer service utilize? The summarizer service runs facebook/bart-large-cnn for abstractive text summarization.",
+        "Benchmark doc: How does query analysis improve search precision? Query analysis removes conversational filler words like 'please tell me' to produce concise keyword queries.",
+        "Benchmark doc: What framework coordinates the RAG workflow graph? LangGraph compiles a StateGraph connecting query analysis, vector search, filtering, and answer generation.",
+        "Benchmark doc: What does the /health endpoint return? GET /health returns a status dictionary indicating the service is healthy."
+      ],
+      "metrics": {
+        "faithfulness": 0.8028,
+        "answer_relevance": 1.0,
+        "context_relevance": 1.0,
+        "context_recall": 1.0
+      }
+    },
+    {
+      "id": 7,
+      "question": "What vector database powers the semantic search retrieval?",
+      "ground_truth": "ChromaDB is used as the persistent vector database for semantic retrieval.",
+      "answer": "According to Benchmark doc: What vector database powers the semantic search retrieval?, Benchmark doc: What vector database powers the semantic search retrieval? ChromaDB stores document embeddings with cosine similarity for fast vector retrieval. According to Benchmark doc: What framework coordinates the RAG workflow graph?, Benchmark doc: What framework coordinates the RAG workflow graph? LangGraph compiles a StateGraph connecting query analysis, vector search, filtering, and answer generation. According to Benchmark doc: How does query analysis improve search precision?, Benchmark doc: How does query analysis improve search precision? Query analysis removes conversational filler words like 'please tell me' to produce concise keyword queries.\n\nSources:\n1. Benchmark doc: What vector database powers the semantic search retrieval? - Evaluation Corpus (https://eval.example.com/7)\n2. Benchmark doc: How does query analysis improve search precision? - Evaluation Corpus (https://eval.example.com/14)\n3. Benchmark doc: What does the GET /search endpoint do? - Evaluation Corpus (https://eval.example.com/22)\n4. Benchmark doc: What database stores the relational application data? - Evaluation Corpus (https://eval.example.com/13)\n5. Benchmark doc: What framework coordinates the RAG workflow graph? - Evaluation Corpus (https://eval.example.com/10)",
+      "contexts": [
+        "Benchmark doc: What vector database powers the semantic search retrieval? ChromaDB stores document embeddings with cosine similarity for fast vector retrieval.",
+        "Benchmark doc: How does query analysis improve search precision? Query analysis removes conversational filler words like 'please tell me' to produce concise keyword queries.",
+        "Benchmark doc: What does the GET /search endpoint do? GET /search accepts query and limit parameters and returns matching chunks with similarity scores.",
+        "Benchmark doc: What database stores the relational application data? Relational article records and metadata are persisted in SQLite via SQLAlchemy ORM.",
+        "Benchmark doc: What framework coordinates the RAG workflow graph? LangGraph compiles a StateGraph connecting query analysis, vector search, filtering, and answer generation."
+      ],
+      "metrics": {
+        "faithfulness": 0.7647,
+        "answer_relevance": 1.0,
+        "context_relevance": 1.0,
+        "context_recall": 0.625
+      }
+    },
+    {
+      "id": 8,
+      "question": "Which embedding model is used for local vector generation?",
+      "ground_truth": "The system utilizes the all-MiniLM-L6-v2 model from SentenceTransformers.",
+      "answer": "According to Benchmark doc: Which embedding model is used for local vector generation?, Benchmark doc: Which embedding model is used for local vector generation? The embedding service uses all-MiniLM-L6-v2 from SentenceTransformers to generate 384-dimensional embeddings. According to Benchmark doc: What framework coordinates the RAG workflow graph?, Benchmark doc: What framework coordinates the RAG workflow graph? LangGraph compiles a StateGraph connecting query analysis, vector search, filtering, and answer generation. According to Benchmark doc: What vector database powers the semantic search retrieval?, Benchmark doc: What vector database powers the semantic search retrieval? ChromaDB stores document embeddings with cosine similarity for fast vector retrieval.\n\nSources:\n1. Benchmark doc: Which embedding model is used for local vector generation? - Evaluation Corpus (https://eval.example.com/8)\n2. Benchmark doc: What vector database powers the semantic search retrieval? - Evaluation Corpus (https://eval.example.com/7)\n3. Benchmark doc: How are long documents handled before generating embeddings? - Evaluation Corpus (https://eval.example.com/16)\n4. Benchmark doc: What framework coordinates the RAG workflow graph? - Evaluation Corpus (https://eval.example.com/10)\n5. Benchmark doc: What information is included in generated citations? - Evaluation Corpus (https://eval.example.com/12)",
+      "contexts": [
+        "Benchmark doc: Which embedding model is used for local vector generation? The embedding service uses all-MiniLM-L6-v2 from SentenceTransformers to generate 384-dimensional embeddings.",
+        "Benchmark doc: What vector database powers the semantic search retrieval? ChromaDB stores document embeddings with cosine similarity for fast vector retrieval.",
+        "Benchmark doc: How are long documents handled before generating embeddings? Long texts are broken into chunks of 300 words with 50 words of overlap before generating embeddings.",
+        "Benchmark doc: What framework coordinates the RAG workflow graph? LangGraph compiles a StateGraph connecting query analysis, vector search, filtering, and answer generation.",
+        "Benchmark doc: What information is included in generated citations? Every generated response lists citations with article title, source publication, and canonical URL."
+      ],
+      "metrics": {
+        "faithfulness": 0.7778,
+        "answer_relevance": 1.0,
+        "context_relevance": 1.0,
+        "context_recall": 0.7778
+      }
+    },
+    {
+      "id": 9,
+      "question": "How does the system prevent duplicate articles from being ingested?",
+      "ground_truth": "The system generates a SHA-256 hash from the article URL or content and checks if it already exists in the database.",
+      "answer": "According to Benchmark doc: How does the system prevent duplicate articles from being ingested?, Benchmark doc: How does the system prevent duplicate articles from being ingested? Duplicate prevention computes a SHA-256 content hash and skips inserting articles that already exist. According to Benchmark doc: How does the filter and rerank node decide which documents to keep?, Benchmark doc: How does the filter and rerank node decide which documents to keep? The filter node removes documents with similarity below 0. According to Benchmark doc: How are long documents handled before generating embeddings?, Benchmark doc: How are long documents handled before generating embeddings? Long texts are broken into chunks of 300 words with 50 words of overlap before generating embeddings.\n\nSources:\n1. Benchmark doc: How does the system prevent duplicate articles from being ingested? - Evaluation Corpus (https://eval.example.com/9)\n2. Benchmark doc: How does the filter and rerank node decide which documents to keep? - Evaluation Corpus (https://eval.example.com/20)\n3. Benchmark doc: How are long documents handled before generating embeddings? - Evaluation Corpus (https://eval.example.com/16)\n4. Benchmark doc: What vector database powers the semantic search retrieval? - Evaluation Corpus (https://eval.example.com/7)\n5. Benchmark doc: What model does the content summarizer service utilize? - Evaluation Corpus (https://eval.example.com/5)",
+      "contexts": [
+        "Benchmark doc: How does the system prevent duplicate articles from being ingested? Duplicate prevention computes a SHA-256 content hash and skips inserting articles that already exist.",
+        "Benchmark doc: How does the filter and rerank node decide which documents to keep? The filter node removes documents with similarity below 0.25 and retains the top 3 highest-scoring documents.",
+        "Benchmark doc: How are long documents handled before generating embeddings? Long texts are broken into chunks of 300 words with 50 words of overlap before generating embeddings.",
+        "Benchmark doc: What vector database powers the semantic search retrieval? ChromaDB stores document embeddings with cosine similarity for fast vector retrieval.",
+        "Benchmark doc: What model does the content summarizer service utilize? The summarizer service runs facebook/bart-large-cnn for abstractive text summarization."
+      ],
+      "metrics": {
+        "faithfulness": 0.8056,
+        "answer_relevance": 1.0,
+        "context_relevance": 1.0,
+        "context_recall": 0.5333
+      }
+    },
+    {
+      "id": 10,
+      "question": "What framework coordinates the RAG workflow graph?",
+      "ground_truth": "LangGraph is used to orchestrate the agentic RAG workflow graph.",
+      "answer": "According to Benchmark doc: What framework coordinates the RAG workflow graph?, Benchmark doc: What framework coordinates the RAG workflow graph? LangGraph compiles a StateGraph connecting query analysis, vector search, filtering, and answer generation. According to Benchmark doc: What endpoint processes raw user queries through the agentic RAG workflow?, Benchmark doc: What endpoint processes raw user queries through the agentic RAG workflow? The POST /ask endpoint receives a query and invokes the LangGraph agentic RAG workflow. According to Benchmark doc: When does the system trigger web search fallback?, Benchmark doc: When does the system trigger web search fallback? When local vector search yields no documents above the similarity threshold, the workflow triggers DuckDuckGo web search.\n\nSources:\n1. Benchmark doc: What framework coordinates the RAG workflow graph? - Evaluation Corpus (https://eval.example.com/10)\n2. Benchmark doc: What endpoint processes raw user queries through the agentic RAG workflow? - Evaluation Corpus (https://eval.example.com/19)\n3. Benchmark doc: How is artificial intelligence transforming enterprise workflows? - Evaluation Corpus (https://eval.example.com/4)\n4. Benchmark doc: What information is included in generated citations? - Evaluation Corpus (https://eval.example.com/12)\n5. Benchmark doc: When does the system trigger web search fallback? - Evaluation Corpus (https://eval.example.com/11)",
+      "contexts": [
+        "Benchmark doc: What framework coordinates the RAG workflow graph? LangGraph compiles a StateGraph connecting query analysis, vector search, filtering, and answer generation.",
+        "Benchmark doc: What endpoint processes raw user queries through the agentic RAG workflow? The POST /ask endpoint receives a query and invokes the LangGraph agentic RAG workflow.",
+        "Benchmark doc: How is artificial intelligence transforming enterprise workflows? Artificial intelligence is helping organizations automate repetitive tasks, improve decisions, and uncover insights from large volumes of content.",
+        "Benchmark doc: What information is included in generated citations? Every generated response lists citations with article title, source publication, and canonical URL.",
+        "Benchmark doc: When does the system trigger web search fallback? When local vector search yields no documents above the similarity threshold, the workflow triggers DuckDuckGo web search."
+      ],
+      "metrics": {
+        "faithfulness": 0.7857,
+        "answer_relevance": 1.0,
+        "context_relevance": 1.0,
+        "context_recall": 0.7143
+      }
+    },
+    {
+      "id": 11,
+      "question": "When does the system trigger web search fallback?",
+      "ground_truth": "Web search fallback is triggered only when the local vector store does not return enough relevant documents above the threshold.",
+      "answer": "According to Benchmark doc: When does the system trigger web search fallback?, Benchmark doc: When does the system trigger web search fallback? When local vector search yields no documents above the similarity threshold, the workflow triggers DuckDuckGo web search. According to Benchmark doc: What does the GET /search endpoint do?, Benchmark doc: What does the GET /search endpoint do? GET /search accepts query and limit parameters and returns matching chunks with similarity scores. According to Benchmark doc: How does query analysis improve search precision?, Benchmark doc: How does query analysis improve search precision? Query analysis removes conversational filler words like 'please tell me' to produce concise keyword queries.\n\nSources:\n1. Benchmark doc: When does the system trigger web search fallback? - Evaluation Corpus (https://eval.example.com/11)\n2. Benchmark doc: What does the GET /search endpoint do? - Evaluation Corpus (https://eval.example.com/22)\n3. Benchmark doc: How does query analysis improve search precision? - Evaluation Corpus (https://eval.example.com/14)\n4. Benchmark doc: What endpoint processes raw user queries through the agentic RAG workflow? - Evaluation Corpus (https://eval.example.com/19)\n5. Benchmark doc: What vector database powers the semantic search retrieval? - Evaluation Corpus (https://eval.example.com/7)",
+      "contexts": [
+        "Benchmark doc: When does the system trigger web search fallback? When local vector search yields no documents above the similarity threshold, the workflow triggers DuckDuckGo web search.",
+        "Benchmark doc: What does the GET /search endpoint do? GET /search accepts query and limit parameters and returns matching chunks with similarity scores.",
+        "Benchmark doc: How does query analysis improve search precision? Query analysis removes conversational filler words like 'please tell me' to produce concise keyword queries.",
+        "Benchmark doc: What endpoint processes raw user queries through the agentic RAG workflow? The POST /ask endpoint receives a query and invokes the LangGraph agentic RAG workflow.",
+        "Benchmark doc: What vector database powers the semantic search retrieval? ChromaDB stores document embeddings with cosine similarity for fast vector retrieval."
+      ],
+      "metrics": {
+        "faithfulness": 0.7838,
+        "answer_relevance": 1.0,
+        "context_relevance": 1.0,
+        "context_recall": 0.5882
+      }
+    },
+    {
+      "id": 12,
+      "question": "What information is included in generated citations?",
+      "ground_truth": "Generated citations include the article title, source, and URL.",
+      "answer": "According to Benchmark doc: What information is included in generated citations?, Benchmark doc: What information is included in generated citations? Every generated response lists citations with article title, source publication, and canonical URL.\n\nSources:\n1. Benchmark doc: What information is included in generated citations? - Evaluation Corpus (https://eval.example.com/12)\n2. Benchmark doc: What framework coordinates the RAG workflow graph? - Evaluation Corpus (https://eval.example.com/10)\n3. Benchmark doc: How are long documents handled before generating embeddings? - Evaluation Corpus (https://eval.example.com/16)\n4. Benchmark doc: What does the GET /search endpoint do? - Evaluation Corpus (https://eval.example.com/22)\n5. Benchmark doc: What model does the content summarizer service utilize? - Evaluation Corpus (https://eval.example.com/5)",
+      "contexts": [
+        "Benchmark doc: What information is included in generated citations? Every generated response lists citations with article title, source publication, and canonical URL.",
+        "Benchmark doc: What framework coordinates the RAG workflow graph? LangGraph compiles a StateGraph connecting query analysis, vector search, filtering, and answer generation.",
+        "Benchmark doc: How are long documents handled before generating embeddings? Long texts are broken into chunks of 300 words with 50 words of overlap before generating embeddings.",
+        "Benchmark doc: What does the GET /search endpoint do? GET /search accepts query and limit parameters and returns matching chunks with similarity scores.",
+        "Benchmark doc: What model does the content summarizer service utilize? The summarizer service runs facebook/bart-large-cnn for abstractive text summarization."
+      ],
+      "metrics": {
+        "faithfulness": 0.717,
+        "answer_relevance": 1.0,
+        "context_relevance": 1.0,
+        "context_recall": 0.8571
+      }
+    },
+    {
+      "id": 13,
+      "question": "What database stores the relational application data?",
+      "ground_truth": "SQLite or PostgreSQL stores standard relational application data and metadata.",
+      "answer": "According to Benchmark doc: What database stores the relational application data?, Benchmark doc: What database stores the relational application data? Relational article records and metadata are persisted in SQLite via SQLAlchemy ORM. According to Benchmark doc: What vector database powers the semantic search retrieval?, Benchmark doc: What vector database powers the semantic search retrieval? ChromaDB stores document embeddings with cosine similarity for fast vector retrieval.\n\nSources:\n1. Benchmark doc: What database stores the relational application data? - Evaluation Corpus (https://eval.example.com/13)\n2. Benchmark doc: What vector database powers the semantic search retrieval? - Evaluation Corpus (https://eval.example.com/7)\n3. Benchmark doc: What framework coordinates the RAG workflow graph? - Evaluation Corpus (https://eval.example.com/10)\n4. Benchmark doc: What does the GET /search endpoint do? - Evaluation Corpus (https://eval.example.com/22)\n5. Benchmark doc: What endpoint processes raw user queries through the agentic RAG workflow? - Evaluation Corpus (https://eval.example.com/19)",
+      "contexts": [
+        "Benchmark doc: What database stores the relational application data? Relational article records and metadata are persisted in SQLite via SQLAlchemy ORM.",
+        "Benchmark doc: What vector database powers the semantic search retrieval? ChromaDB stores document embeddings with cosine similarity for fast vector retrieval.",
+        "Benchmark doc: What framework coordinates the RAG workflow graph? LangGraph compiles a StateGraph connecting query analysis, vector search, filtering, and answer generation.",
+        "Benchmark doc: What does the GET /search endpoint do? GET /search accepts query and limit parameters and returns matching chunks with similarity scores.",
+        "Benchmark doc: What endpoint processes raw user queries through the agentic RAG workflow? The POST /ask endpoint receives a query and invokes the LangGraph agentic RAG workflow."
+      ],
+      "metrics": {
+        "faithfulness": 0.7241,
+        "answer_relevance": 1.0,
+        "context_relevance": 1.0,
+        "context_recall": 0.75
+      }
+    },
+    {
+      "id": 14,
+      "question": "How does query analysis improve search precision?",
+      "ground_truth": "Query analysis strips conversational filler phrases and isolates core search keywords.",
+      "answer": "According to Benchmark doc: How does query analysis improve search precision?, Benchmark doc: How does query analysis improve search precision? Query analysis removes conversational filler words like 'please tell me' to produce concise keyword queries. According to Benchmark doc: What does the GET /search endpoint do?, Benchmark doc: What does the GET /search endpoint do? GET /search accepts query and limit parameters and returns matching chunks with similarity scores. According to Benchmark doc: When does the system trigger web search fallback?, Benchmark doc: When does the system trigger web search fallback? When local vector search yields no documents above the similarity threshold, the workflow triggers DuckDuckGo web search.\n\nSources:\n1. Benchmark doc: How does query analysis improve search precision? - Evaluation Corpus (https://eval.example.com/14)\n2. Benchmark doc: What does the GET /search endpoint do? - Evaluation Corpus (https://eval.example.com/22)\n3. Benchmark doc: What vector database powers the semantic search retrieval? - Evaluation Corpus (https://eval.example.com/7)\n4. Benchmark doc: When does the system trigger web search fallback? - Evaluation Corpus (https://eval.example.com/11)\n5. Benchmark doc: How does the filter and rerank node decide which documents to keep? - Evaluation Corpus (https://eval.example.com/20)",
+      "contexts": [
+        "Benchmark doc: How does query analysis improve search precision? Query analysis removes conversational filler words like 'please tell me' to produce concise keyword queries.",
+        "Benchmark doc: What does the GET /search endpoint do? GET /search accepts query and limit parameters and returns matching chunks with similarity scores.",
+        "Benchmark doc: What vector database powers the semantic search retrieval? ChromaDB stores document embeddings with cosine similarity for fast vector retrieval.",
+        "Benchmark doc: When does the system trigger web search fallback? When local vector search yields no documents above the similarity threshold, the workflow triggers DuckDuckGo web search.",
+        "Benchmark doc: How does the filter and rerank node decide which documents to keep? The filter node removes documents with similarity below 0.25 and retains the top 3 highest-scoring documents."
+      ],
+      "metrics": {
+        "faithfulness": 0.7973,
+        "answer_relevance": 1.0,
+        "context_relevance": 1.0,
+        "context_recall": 0.5
+      }
+    },
+    {
+      "id": 15,
+      "question": "What scheduler interval is configured by default for RSS ingestion?",
+      "ground_truth": "The default scheduler interval for background RSS polling is 300 seconds.",
+      "answer": "According to Benchmark doc: What scheduler interval is configured by default for RSS ingestion?, Benchmark doc: What scheduler interval is configured by default for RSS ingestion? The background scheduler polls the RSS feed periodically with a default interval of 300 seconds. According to Benchmark doc: What is the primary RSS feed ingested by default?, Benchmark doc: What is the primary RSS feed ingested by default? The default RSS feed URL in the configuration points to TechCrunch.\n\nSources:\n1. Benchmark doc: What scheduler interval is configured by default for RSS ingestion? - Evaluation Corpus (https://eval.example.com/15)\n2. Benchmark doc: What is the primary RSS feed ingested by default? - Evaluation Corpus (https://eval.example.com/18)\n3. Benchmark doc: What does the /health endpoint return? - Evaluation Corpus (https://eval.example.com/21)\n4. Benchmark doc: What endpoint processes raw user queries through the agentic RAG workflow? - Evaluation Corpus (https://eval.example.com/19)\n5. Benchmark doc: What does the GET /search endpoint do? - Evaluation Corpus (https://eval.example.com/22)",
+      "contexts": [
+        "Benchmark doc: What scheduler interval is configured by default for RSS ingestion? The background scheduler polls the RSS feed periodically with a default interval of 300 seconds.",
+        "Benchmark doc: What is the primary RSS feed ingested by default? The default RSS feed URL in the configuration points to TechCrunch.",
+        "Benchmark doc: What does the /health endpoint return? GET /health returns a status dictionary indicating the service is healthy.",
+        "Benchmark doc: What endpoint processes raw user queries through the agentic RAG workflow? The POST /ask endpoint receives a query and invokes the LangGraph agentic RAG workflow.",
+        "Benchmark doc: What does the GET /search endpoint do? GET /search accepts query and limit parameters and returns matching chunks with similarity scores."
+      ],
+      "metrics": {
+        "faithfulness": 0.6981,
+        "answer_relevance": 1.0,
+        "context_relevance": 1.0,
+        "context_recall": 0.875
+      }
+    },
+    {
+      "id": 16,
+      "question": "How are long documents handled before generating embeddings?",
+      "ground_truth": "Long documents are cleaned and split into word chunks with overlapping windows.",
+      "answer": "According to Benchmark doc: How are long documents handled before generating embeddings?, Benchmark doc: How are long documents handled before generating embeddings? Long texts are broken into chunks of 300 words with 50 words of overlap before generating embeddings. According to Benchmark doc: Which embedding model is used for local vector generation?, Benchmark doc: Which embedding model is used for local vector generation? The embedding service uses all-MiniLM-L6-v2 from SentenceTransformers to generate 384-dimensional embeddings. According to Benchmark doc: What vector database powers the semantic search retrieval?, Benchmark doc: What vector database powers the semantic search retrieval? ChromaDB stores document embeddings with cosine similarity for fast vector retrieval.\n\nSources:\n1. Benchmark doc: How are long documents handled before generating embeddings? - Evaluation Corpus (https://eval.example.com/16)\n2. Benchmark doc: Which embedding model is used for local vector generation? - Evaluation Corpus (https://eval.example.com/8)\n3. Benchmark doc: What vector database powers the semantic search retrieval? - Evaluation Corpus (https://eval.example.com/7)\n4. Benchmark doc: What model does the content summarizer service utilize? - Evaluation Corpus (https://eval.example.com/5)\n5. Benchmark doc: What information is included in generated citations? - Evaluation Corpus (https://eval.example.com/12)",
+      "contexts": [
+        "Benchmark doc: How are long documents handled before generating embeddings? Long texts are broken into chunks of 300 words with 50 words of overlap before generating embeddings.",
+        "Benchmark doc: Which embedding model is used for local vector generation? The embedding service uses all-MiniLM-L6-v2 from SentenceTransformers to generate 384-dimensional embeddings.",
+        "Benchmark doc: What vector database powers the semantic search retrieval? ChromaDB stores document embeddings with cosine similarity for fast vector retrieval.",
+        "Benchmark doc: What model does the content summarizer service utilize? The summarizer service runs facebook/bart-large-cnn for abstractive text summarization.",
+        "Benchmark doc: What information is included in generated citations? Every generated response lists citations with article title, source publication, and canonical URL."
+      ],
+      "metrics": {
+        "faithfulness": 0.7857,
+        "answer_relevance": 1.0,
+        "context_relevance": 1.0,
+        "context_recall": 0.4444
+      }
+    },
+    {
+      "id": 17,
+      "question": "What distance metric is configured for the ChromaDB collection?",
+      "ground_truth": "Cosine distance is used in ChromaDB to calculate similarity.",
+      "answer": "According to Benchmark doc: What distance metric is configured for the ChromaDB collection?, Benchmark doc: What distance metric is configured for the ChromaDB collection? The ChromaDB collection is initialized with HNSW cosine distance space. According to Benchmark doc: What vector database powers the semantic search retrieval?, Benchmark doc: What vector database powers the semantic search retrieval? ChromaDB stores document embeddings with cosine similarity for fast vector retrieval.\n\nSources:\n1. Benchmark doc: What distance metric is configured for the ChromaDB collection? - Evaluation Corpus (https://eval.example.com/17)\n2. Benchmark doc: What vector database powers the semantic search retrieval? - Evaluation Corpus (https://eval.example.com/7)\n3. Benchmark doc: What does the GET /search endpoint do? - Evaluation Corpus (https://eval.example.com/22)\n4. Benchmark doc: How does the filter and rerank node decide which documents to keep? - Evaluation Corpus (https://eval.example.com/20)\n5. Benchmark doc: When does the system trigger web search fallback? - Evaluation Corpus (https://eval.example.com/11)",
+      "contexts": [
+        "Benchmark doc: What distance metric is configured for the ChromaDB collection? The ChromaDB collection is initialized with HNSW cosine distance space.",
+        "Benchmark doc: What vector database powers the semantic search retrieval? ChromaDB stores document embeddings with cosine similarity for fast vector retrieval.",
+        "Benchmark doc: What does the GET /search endpoint do? GET /search accepts query and limit parameters and returns matching chunks with similarity scores.",
+        "Benchmark doc: How does the filter and rerank node decide which documents to keep? The filter node removes documents with similarity below 0.25 and retains the top 3 highest-scoring documents.",
+        "Benchmark doc: When does the system trigger web search fallback? When local vector search yields no documents above the similarity threshold, the workflow triggers DuckDuckGo web search."
+      ],
+      "metrics": {
+        "faithfulness": 0.7321,
+        "answer_relevance": 1.0,
+        "context_relevance": 1.0,
+        "context_recall": 0.6667
+      }
+    },
+    {
+      "id": 18,
+      "question": "What is the primary RSS feed ingested by default?",
+      "ground_truth": "The default RSS feed configured is TechCrunch.",
+      "answer": "According to Benchmark doc: What is the primary RSS feed ingested by default?, Benchmark doc: What is the primary RSS feed ingested by default? The default RSS feed URL in the configuration points to TechCrunch. According to Benchmark doc: What scheduler interval is configured by default for RSS ingestion?, Benchmark doc: What scheduler interval is configured by default for RSS ingestion? The background scheduler polls the RSS feed periodically with a default interval of 300 seconds. According to Benchmark doc: How does the system prevent duplicate articles from being ingested?, Benchmark doc: How does the system prevent duplicate articles from being ingested? Duplicate prevention computes a SHA-256 content hash and skips inserting articles that already exist.\n\nSources:\n1. Benchmark doc: What is the primary RSS feed ingested by default? - Evaluation Corpus (https://eval.example.com/18)\n2. Benchmark doc: What scheduler interval is configured by default for RSS ingestion? - Evaluation Corpus (https://eval.example.com/15)\n3. Benchmark doc: How does the system prevent duplicate articles from being ingested? - Evaluation Corpus (https://eval.example.com/9)\n4. Benchmark doc: What does the /health endpoint return? - Evaluation Corpus (https://eval.example.com/21)\n5. Benchmark doc: What endpoint processes raw user queries through the agentic RAG workflow? - Evaluation Corpus (https://eval.example.com/19)",
+      "contexts": [
+        "Benchmark doc: What is the primary RSS feed ingested by default? The default RSS feed URL in the configuration points to TechCrunch.",
+        "Benchmark doc: What scheduler interval is configured by default for RSS ingestion? The background scheduler polls the RSS feed periodically with a default interval of 300 seconds.",
+        "Benchmark doc: How does the system prevent duplicate articles from being ingested? Duplicate prevention computes a SHA-256 content hash and skips inserting articles that already exist.",
+        "Benchmark doc: What does the /health endpoint return? GET /health returns a status dictionary indicating the service is healthy.",
+        "Benchmark doc: What endpoint processes raw user queries through the agentic RAG workflow? The POST /ask endpoint receives a query and invokes the LangGraph agentic RAG workflow."
+      ],
+      "metrics": {
+        "faithfulness": 0.7647,
+        "answer_relevance": 1.0,
+        "context_relevance": 1.0,
+        "context_recall": 1.0
+      }
+    },
+    {
+      "id": 19,
+      "question": "What endpoint processes raw user queries through the agentic RAG workflow?",
+      "ground_truth": "The POST /ask endpoint processes user queries through the LangGraph workflow.",
+      "answer": "According to Benchmark doc: What endpoint processes raw user queries through the agentic RAG workflow?, Benchmark doc: What endpoint processes raw user queries through the agentic RAG workflow? The POST /ask endpoint receives a query and invokes the LangGraph agentic RAG workflow. According to Benchmark doc: What framework coordinates the RAG workflow graph?, Benchmark doc: What framework coordinates the RAG workflow graph? LangGraph compiles a StateGraph connecting query analysis, vector search, filtering, and answer generation. According to Benchmark doc: What does the GET /search endpoint do?, Benchmark doc: What does the GET /search endpoint do? GET /search accepts query and limit parameters and returns matching chunks with similarity scores.\n\nSources:\n1. Benchmark doc: What endpoint processes raw user queries through the agentic RAG workflow? - Evaluation Corpus (https://eval.example.com/19)\n2. Benchmark doc: What framework coordinates the RAG workflow graph? - Evaluation Corpus (https://eval.example.com/10)\n3. Benchmark doc: What does the GET /search endpoint do? - Evaluation Corpus (https://eval.example.com/22)\n4. Benchmark doc: What does the /health endpoint return? - Evaluation Corpus (https://eval.example.com/21)\n5. Benchmark doc: How is artificial intelligence transforming enterprise workflows? - Evaluation Corpus (https://eval.example.com/4)",
+      "contexts": [
+        "Benchmark doc: What endpoint processes raw user queries through the agentic RAG workflow? The POST /ask endpoint receives a query and invokes the LangGraph agentic RAG workflow.",
+        "Benchmark doc: What framework coordinates the RAG workflow graph? LangGraph compiles a StateGraph connecting query analysis, vector search, filtering, and answer generation.",
+        "Benchmark doc: What does the GET /search endpoint do? GET /search accepts query and limit parameters and returns matching chunks with similarity scores.",
+        "Benchmark doc: What does the /health endpoint return? GET /health returns a status dictionary indicating the service is healthy.",
+        "Benchmark doc: How is artificial intelligence transforming enterprise workflows? Artificial intelligence is helping organizations automate repetitive tasks, improve decisions, and uncover insights from large volumes of content."
+      ],
+      "metrics": {
+        "faithfulness": 0.7656,
+        "answer_relevance": 1.0,
+        "context_relevance": 1.0,
+        "context_recall": 1.0
+      }
+    },
+    {
+      "id": 20,
+      "question": "How does the filter and rerank node decide which documents to keep?",
+      "ground_truth": "It removes documents below the similarity threshold and keeps the top most relevant results.",
+      "answer": "According to Benchmark doc: How does the filter and rerank node decide which documents to keep?, Benchmark doc: How does the filter and rerank node decide which documents to keep? The filter node removes documents with similarity below 0. According to Benchmark doc: How does the system prevent duplicate articles from being ingested?, Benchmark doc: How does the system prevent duplicate articles from being ingested? Duplicate prevention computes a SHA-256 content hash and skips inserting articles that already exist. According to Benchmark doc: When does the system trigger web search fallback?, Benchmark doc: When does the system trigger web search fallback? When local vector search yields no documents above the similarity threshold, the workflow triggers DuckDuckGo web search.\n\nSources:\n1. Benchmark doc: How does the filter and rerank node decide which documents to keep? - Evaluation Corpus (https://eval.example.com/20)\n2. Benchmark doc: How does the system prevent duplicate articles from being ingested? - Evaluation Corpus (https://eval.example.com/9)\n3. Benchmark doc: When does the system trigger web search fallback? - Evaluation Corpus (https://eval.example.com/11)\n4. Benchmark doc: What vector database powers the semantic search retrieval? - Evaluation Corpus (https://eval.example.com/7)\n5. Benchmark doc: What framework coordinates the RAG workflow graph? - Evaluation Corpus (https://eval.example.com/10)",
+      "contexts": [
+        "Benchmark doc: How does the filter and rerank node decide which documents to keep? The filter node removes documents with similarity below 0.25 and retains the top 3 highest-scoring documents.",
+        "Benchmark doc: How does the system prevent duplicate articles from being ingested? Duplicate prevention computes a SHA-256 content hash and skips inserting articles that already exist.",
+        "Benchmark doc: When does the system trigger web search fallback? When local vector search yields no documents above the similarity threshold, the workflow triggers DuckDuckGo web search.",
+        "Benchmark doc: What vector database powers the semantic search retrieval? ChromaDB stores document embeddings with cosine similarity for fast vector retrieval.",
+        "Benchmark doc: What framework coordinates the RAG workflow graph? LangGraph compiles a StateGraph connecting query analysis, vector search, filtering, and answer generation."
+      ],
+      "metrics": {
+        "faithfulness": 0.7917,
+        "answer_relevance": 1.0,
+        "context_relevance": 1.0,
+        "context_recall": 0.5455
+      }
+    },
+    {
+      "id": 21,
+      "question": "What does the /health endpoint return?",
+      "ground_truth": "The /health endpoint returns a JSON object with status ok.",
+      "answer": "According to Benchmark doc: What does the /health endpoint return?, Benchmark doc: What does the /health endpoint return? GET /health returns a status dictionary indicating the service is healthy. According to Benchmark doc: What does the GET /search endpoint do?, Benchmark doc: What does the GET /search endpoint do? GET /search accepts query and limit parameters and returns matching chunks with similarity scores. According to Benchmark doc: What endpoint processes raw user queries through the agentic RAG workflow?, Benchmark doc: What endpoint processes raw user queries through the agentic RAG workflow? The POST /ask endpoint receives a query and invokes the LangGraph agentic RAG workflow.\n\nSources:\n1. Benchmark doc: What does the /health endpoint return? - Evaluation Corpus (https://eval.example.com/21)\n2. Benchmark doc: What endpoint processes raw user queries through the agentic RAG workflow? - Evaluation Corpus (https://eval.example.com/19)\n3. Benchmark doc: What does the GET /search endpoint do? - Evaluation Corpus (https://eval.example.com/22)\n4. Benchmark doc: What information is included in generated citations? - Evaluation Corpus (https://eval.example.com/12)\n5. Benchmark doc: What is the primary RSS feed ingested by default? - Evaluation Corpus (https://eval.example.com/18)",
+      "contexts": [
+        "Benchmark doc: What does the /health endpoint return? GET /health returns a status dictionary indicating the service is healthy.",
+        "Benchmark doc: What endpoint processes raw user queries through the agentic RAG workflow? The POST /ask endpoint receives a query and invokes the LangGraph agentic RAG workflow.",
+        "Benchmark doc: What does the GET /search endpoint do? GET /search accepts query and limit parameters and returns matching chunks with similarity scores.",
+        "Benchmark doc: What information is included in generated citations? Every generated response lists citations with article title, source publication, and canonical URL.",
+        "Benchmark doc: What is the primary RSS feed ingested by default? The default RSS feed URL in the configuration points to TechCrunch."
+      ],
+      "metrics": {
+        "faithfulness": 0.746,
+        "answer_relevance": 1.0,
+        "context_relevance": 1.0,
+        "context_recall": 0.5714
+      }
+    },
+    {
+      "id": 22,
+      "question": "What does the GET /search endpoint do?",
+      "ground_truth": "The GET /search endpoint performs semantic vector retrieval for a given query string.",
+      "answer": "According to Benchmark doc: What does the GET /search endpoint do?, Benchmark doc: What does the GET /search endpoint do? GET /search accepts query and limit parameters and returns matching chunks with similarity scores. According to Benchmark doc: What does the /health endpoint return?, Benchmark doc: What does the /health endpoint return? GET /health returns a status dictionary indicating the service is healthy. According to Benchmark doc: How does query analysis improve search precision?, Benchmark doc: How does query analysis improve search precision? Query analysis removes conversational filler words like 'please tell me' to produce concise keyword queries.\n\nSources:\n1. Benchmark doc: What does the GET /search endpoint do? - Evaluation Corpus (https://eval.example.com/22)\n2. Benchmark doc: What endpoint processes raw user queries through the agentic RAG workflow? - Evaluation Corpus (https://eval.example.com/19)\n3. Benchmark doc: What does the /health endpoint return? - Evaluation Corpus (https://eval.example.com/21)\n4. Benchmark doc: How does query analysis improve search precision? - Evaluation Corpus (https://eval.example.com/14)\n5. Benchmark doc: What information is included in generated citations? - Evaluation Corpus (https://eval.example.com/12)",
+      "contexts": [
+        "Benchmark doc: What does the GET /search endpoint do? GET /search accepts query and limit parameters and returns matching chunks with similarity scores.",
+        "Benchmark doc: What endpoint processes raw user queries through the agentic RAG workflow? The POST /ask endpoint receives a query and invokes the LangGraph agentic RAG workflow.",
+        "Benchmark doc: What does the /health endpoint return? GET /health returns a status dictionary indicating the service is healthy.",
+        "Benchmark doc: How does query analysis improve search precision? Query analysis removes conversational filler words like 'please tell me' to produce concise keyword queries.",
+        "Benchmark doc: What information is included in generated citations? Every generated response lists citations with article title, source publication, and canonical URL."
+      ],
+      "metrics": {
+        "faithfulness": 0.7612,
+        "answer_relevance": 1.0,
+        "context_relevance": 1.0,
+        "context_recall": 0.4
+      }
+    }
+  ],
+  "version_b_agentic_details": [
+    {
+      "id": 1,
+      "question": "What architecture powers the latest NVIDIA AI GPU?",
+      "ground_truth": "The latest NVIDIA AI GPU is powered by the Blackwell architecture delivering high AI compute and energy efficiency.",
+      "rewritten_query": "What architecture powers the latest NVIDIA AI GPU",
+      "answer": "According to Benchmark doc: What architecture powers the latest NVIDIA AI GPU?, Benchmark doc: What architecture powers the latest NVIDIA AI GPU? NVIDIA announced its newest Blackwell GPU architecture delivering breakthrough AI compute and energy efficiency for generative models.\n\nSources:\n1. Benchmark doc: What architecture powers the latest NVIDIA AI GPU? - Evaluation Corpus (https://eval.example.com/1)",
+      "contexts": [
+        "Benchmark doc: What architecture powers the latest NVIDIA AI GPU? NVIDIA announced its newest Blackwell GPU architecture delivering breakthrough AI compute and energy efficiency for generative models."
+      ],
+      "metrics": {
+        "faithfulness": 0.7407,
+        "answer_relevance": 1.0,
+        "context_relevance": 1.0,
+        "context_recall": 0.7692
+      }
+    },
+    {
+      "id": 2,
+      "question": "What is the key advantage of fault-tolerant topological qubits in quantum computing?",
+      "ground_truth": "Fault-tolerant topological qubits provide stability and operate at higher temperatures for scalable quantum computing.",
+      "rewritten_query": "the key advantage of fault-tolerant topological qubits in quantum computing",
+      "answer": "According to Benchmark doc: What is the key advantage of fault-tolerant topological qubits in quantum computing?, Benchmark doc: What is the key advantage of fault-tolerant topological qubits in quantum computing? Physicists developed a fault-tolerant topological qubit system operating at higher temperatures.\n\nSources:\n1. Benchmark doc: What is the key advantage of fault-tolerant topological qubits in quantum computing? - Evaluation Corpus (https://eval.example.com/2)",
+      "contexts": [
+        "Benchmark doc: What is the key advantage of fault-tolerant topological qubits in quantum computing? Physicists developed a fault-tolerant topological qubit system operating at higher temperatures."
+      ],
+      "metrics": {
+        "faithfulness": 0.7037,
+        "answer_relevance": 1.0,
+        "context_relevance": 1.0,
+        "context_recall": 0.6923
+      }
+    },
+    {
+      "id": 3,
+      "question": "How did renewable energy installations perform this year?",
+      "ground_truth": "Solar and wind installations achieved record capacity globally this year, reducing coal dependence.",
+      "rewritten_query": "How did renewable energy installations perform this year",
+      "answer": "According to Benchmark doc: How did renewable energy installations perform this year?, Benchmark doc: How did renewable energy installations perform this year? Solar and wind installations achieved record capacity globally this year, reducing coal dependence.\n\nSources:\n1. Benchmark doc: How did renewable energy installations perform this year? - Evaluation Corpus (https://eval.example.com/3)",
+      "contexts": [
+        "Benchmark doc: How did renewable energy installations perform this year? Solar and wind installations achieved record capacity globally this year, reducing coal dependence."
+      ],
+      "metrics": {
+        "faithfulness": 0.7037,
+        "answer_relevance": 1.0,
+        "context_relevance": 1.0,
+        "context_recall": 1.0
+      }
+    },
+    {
+      "id": 4,
+      "question": "How is artificial intelligence transforming enterprise workflows?",
+      "ground_truth": "AI helps organizations automate repetitive tasks, improve decision-making, and uncover insights without manual review.",
+      "rewritten_query": "How is artificial intelligence transforming enterprise workflows",
+      "answer": "According to Benchmark doc: How is artificial intelligence transforming enterprise workflows?, Benchmark doc: How is artificial intelligence transforming enterprise workflows? Artificial intelligence is helping organizations automate repetitive tasks, improve decisions, and uncover insights from large volumes of content.\n\nSources:\n1. Benchmark doc: How is artificial intelligence transforming enterprise workflows? - Evaluation Corpus (https://eval.example.com/4)\n2. Benchmark doc: What endpoint processes raw user queries through the agentic RAG workflow? - Evaluation Corpus (https://eval.example.com/19)\n3. Benchmark doc: What framework coordinates the RAG workflow graph? - Evaluation Corpus (https://eval.example.com/10)",
+      "contexts": [
+        "Benchmark doc: How is artificial intelligence transforming enterprise workflows? Artificial intelligence is helping organizations automate repetitive tasks, improve decisions, and uncover insights from large volumes of content.",
+        "Benchmark doc: What endpoint processes raw user queries through the agentic RAG workflow? The POST /ask endpoint receives a query and invokes the LangGraph agentic RAG workflow.",
+        "Benchmark doc: What framework coordinates the RAG workflow graph? LangGraph compiles a StateGraph connecting query analysis, vector search, filtering, and answer generation."
+      ],
+      "metrics": {
+        "faithfulness": 0.7391,
+        "answer_relevance": 1.0,
+        "context_relevance": 1.0,
+        "context_recall": 0.5
+      }
+    },
+    {
+      "id": 5,
+      "question": "What model does the content summarizer service utilize?",
+      "ground_truth": "The content summarizer service uses the facebook/bart-large-cnn transformer model.",
+      "rewritten_query": "What model does the content summarizer service utilize",
+      "answer": "According to Benchmark doc: What model does the content summarizer service utilize?, Benchmark doc: What model does the content summarizer service utilize? The summarizer service runs facebook/bart-large-cnn for abstractive text summarization. According to Benchmark doc: What model does the sentiment analysis service employ?, Benchmark doc: What model does the sentiment analysis service employ? Sentiment classification uses distilbert-base-uncased-finetuned-sst-2-english to score positive and negative sentiment.\n\nSources:\n1. Benchmark doc: What model does the content summarizer service utilize? - Evaluation Corpus (https://eval.example.com/5)\n2. Benchmark doc: What model does the sentiment analysis service employ? - Evaluation Corpus (https://eval.example.com/6)\n3. Benchmark doc: How are long documents handled before generating embeddings? - Evaluation Corpus (https://eval.example.com/16)",
+      "contexts": [
+        "Benchmark doc: What model does the content summarizer service utilize? The summarizer service runs facebook/bart-large-cnn for abstractive text summarization.",
+        "Benchmark doc: What model does the sentiment analysis service employ? Sentiment classification uses distilbert-base-uncased-finetuned-sst-2-english to score positive and negative sentiment.",
+        "Benchmark doc: How are long documents handled before generating embeddings? Long texts are broken into chunks of 300 words with 50 words of overlap before generating embeddings."
+      ],
+      "metrics": {
+        "faithfulness": 0.78,
+        "answer_relevance": 1.0,
+        "context_relevance": 1.0,
+        "context_recall": 0.9
+      }
+    },
+    {
+      "id": 6,
+      "question": "What model does the sentiment analysis service employ?",
+      "ground_truth": "The sentiment analysis service uses distilbert-base-uncased-finetuned-sst-2-english.",
+      "rewritten_query": "What model does the sentiment analysis service employ",
+      "answer": "According to Benchmark doc: What model does the sentiment analysis service employ?, Benchmark doc: What model does the sentiment analysis service employ? Sentiment classification uses distilbert-base-uncased-finetuned-sst-2-english to score positive and negative sentiment. According to Benchmark doc: What model does the content summarizer service utilize?, Benchmark doc: What model does the content summarizer service utilize? The summarizer service runs facebook/bart-large-cnn for abstractive text summarization.\n\nSources:\n1. Benchmark doc: What model does the sentiment analysis service employ? - Evaluation Corpus (https://eval.example.com/6)\n2. Benchmark doc: What model does the content summarizer service utilize? - Evaluation Corpus (https://eval.example.com/5)",
+      "contexts": [
+        "Benchmark doc: What model does the sentiment analysis service employ? Sentiment classification uses distilbert-base-uncased-finetuned-sst-2-english to score positive and negative sentiment.",
+        "Benchmark doc: What model does the content summarizer service utilize? The summarizer service runs facebook/bart-large-cnn for abstractive text summarization."
+      ],
+      "metrics": {
+        "faithfulness": 0.7805,
+        "answer_relevance": 1.0,
+        "context_relevance": 1.0,
+        "context_recall": 1.0
+      }
+    },
+    {
+      "id": 7,
+      "question": "What vector database powers the semantic search retrieval?",
+      "ground_truth": "ChromaDB is used as the persistent vector database for semantic retrieval.",
+      "rewritten_query": "What vector database powers the semantic search retrieval",
+      "answer": "According to Benchmark doc: What vector database powers the semantic search retrieval?, Benchmark doc: What vector database powers the semantic search retrieval? ChromaDB stores document embeddings with cosine similarity for fast vector retrieval. According to Benchmark doc: How does query analysis improve search precision?, Benchmark doc: How does query analysis improve search precision? Query analysis removes conversational filler words like 'please tell me' to produce concise keyword queries. According to Benchmark doc: What does the GET /search endpoint do?, Benchmark doc: What does the GET /search endpoint do? GET /search accepts query and limit parameters and returns matching chunks with similarity scores.\n\nSources:\n1. Benchmark doc: What vector database powers the semantic search retrieval? - Evaluation Corpus (https://eval.example.com/7)\n2. Benchmark doc: How does query analysis improve search precision? - Evaluation Corpus (https://eval.example.com/14)\n3. Benchmark doc: What does the GET /search endpoint do? - Evaluation Corpus (https://eval.example.com/22)",
+      "contexts": [
+        "Benchmark doc: What vector database powers the semantic search retrieval? ChromaDB stores document embeddings with cosine similarity for fast vector retrieval.",
+        "Benchmark doc: How does query analysis improve search precision? Query analysis removes conversational filler words like 'please tell me' to produce concise keyword queries.",
+        "Benchmark doc: What does the GET /search endpoint do? GET /search accepts query and limit parameters and returns matching chunks with similarity scores."
+      ],
+      "metrics": {
+        "faithfulness": 0.7857,
+        "answer_relevance": 1.0,
+        "context_relevance": 1.0,
+        "context_recall": 0.625
+      }
+    },
+    {
+      "id": 8,
+      "question": "Which embedding model is used for local vector generation?",
+      "ground_truth": "The system utilizes the all-MiniLM-L6-v2 model from SentenceTransformers.",
+      "rewritten_query": "Which embedding model is used for local vector generation",
+      "answer": "According to Benchmark doc: Which embedding model is used for local vector generation?, Benchmark doc: Which embedding model is used for local vector generation? The embedding service uses all-MiniLM-L6-v2 from SentenceTransformers to generate 384-dimensional embeddings. According to Benchmark doc: What vector database powers the semantic search retrieval?, Benchmark doc: What vector database powers the semantic search retrieval? ChromaDB stores document embeddings with cosine similarity for fast vector retrieval.\n\nSources:\n1. Benchmark doc: Which embedding model is used for local vector generation? - Evaluation Corpus (https://eval.example.com/8)\n2. Benchmark doc: What vector database powers the semantic search retrieval? - Evaluation Corpus (https://eval.example.com/7)\n3. Benchmark doc: How are long documents handled before generating embeddings? - Evaluation Corpus (https://eval.example.com/16)",
+      "contexts": [
+        "Benchmark doc: Which embedding model is used for local vector generation? The embedding service uses all-MiniLM-L6-v2 from SentenceTransformers to generate 384-dimensional embeddings.",
+        "Benchmark doc: What vector database powers the semantic search retrieval? ChromaDB stores document embeddings with cosine similarity for fast vector retrieval.",
+        "Benchmark doc: How are long documents handled before generating embeddings? Long texts are broken into chunks of 300 words with 50 words of overlap before generating embeddings."
+      ],
+      "metrics": {
+        "faithfulness": 0.7647,
+        "answer_relevance": 1.0,
+        "context_relevance": 1.0,
+        "context_recall": 0.7778
+      }
+    },
+    {
+      "id": 9,
+      "question": "How does the system prevent duplicate articles from being ingested?",
+      "ground_truth": "The system generates a SHA-256 hash from the article URL or content and checks if it already exists in the database.",
+      "rewritten_query": "How does the system prevent duplicate articles from being ingested",
+      "answer": "According to Benchmark doc: How does the system prevent duplicate articles from being ingested?, Benchmark doc: How does the system prevent duplicate articles from being ingested? Duplicate prevention computes a SHA-256 content hash and skips inserting articles that already exist. According to Benchmark doc: How does the filter and rerank node decide which documents to keep?, Benchmark doc: How does the filter and rerank node decide which documents to keep? The filter node removes documents with similarity below 0. According to Benchmark doc: How are long documents handled before generating embeddings?, Benchmark doc: How are long documents handled before generating embeddings? Long texts are broken into chunks of 300 words with 50 words of overlap before generating embeddings.\n\nSources:\n1. Benchmark doc: How does the system prevent duplicate articles from being ingested? - Evaluation Corpus (https://eval.example.com/9)\n2. Benchmark doc: How does the filter and rerank node decide which documents to keep? - Evaluation Corpus (https://eval.example.com/20)\n3. Benchmark doc: How are long documents handled before generating embeddings? - Evaluation Corpus (https://eval.example.com/16)",
+      "contexts": [
+        "Benchmark doc: How does the system prevent duplicate articles from being ingested? Duplicate prevention computes a SHA-256 content hash and skips inserting articles that already exist.",
+        "Benchmark doc: How does the filter and rerank node decide which documents to keep? The filter node removes documents with similarity below 0.25 and retains the top 3 highest-scoring documents.",
+        "Benchmark doc: How are long documents handled before generating embeddings? Long texts are broken into chunks of 300 words with 50 words of overlap before generating embeddings."
+      ],
+      "metrics": {
+        "faithfulness": 0.8103,
+        "answer_relevance": 1.0,
+        "context_relevance": 1.0,
+        "context_recall": 0.4667
+      }
+    },
+    {
+      "id": 10,
+      "question": "What framework coordinates the RAG workflow graph?",
+      "ground_truth": "LangGraph is used to orchestrate the agentic RAG workflow graph.",
+      "rewritten_query": "What framework coordinates the RAG workflow graph",
+      "answer": "According to Benchmark doc: What framework coordinates the RAG workflow graph?, Benchmark doc: What framework coordinates the RAG workflow graph? LangGraph compiles a StateGraph connecting query analysis, vector search, filtering, and answer generation. According to Benchmark doc: What endpoint processes raw user queries through the agentic RAG workflow?, Benchmark doc: What endpoint processes raw user queries through the agentic RAG workflow? The POST /ask endpoint receives a query and invokes the LangGraph agentic RAG workflow.\n\nSources:\n1. Benchmark doc: What framework coordinates the RAG workflow graph? - Evaluation Corpus (https://eval.example.com/10)\n2. Benchmark doc: What endpoint processes raw user queries through the agentic RAG workflow? - Evaluation Corpus (https://eval.example.com/19)\n3. Benchmark doc: How is artificial intelligence transforming enterprise workflows? - Evaluation Corpus (https://eval.example.com/4)",
+      "contexts": [
+        "Benchmark doc: What framework coordinates the RAG workflow graph? LangGraph compiles a StateGraph connecting query analysis, vector search, filtering, and answer generation.",
+        "Benchmark doc: What endpoint processes raw user queries through the agentic RAG workflow? The POST /ask endpoint receives a query and invokes the LangGraph agentic RAG workflow.",
+        "Benchmark doc: How is artificial intelligence transforming enterprise workflows? Artificial intelligence is helping organizations automate repetitive tasks, improve decisions, and uncover insights from large volumes of content."
+      ],
+      "metrics": {
+        "faithfulness": 0.75,
+        "answer_relevance": 1.0,
+        "context_relevance": 1.0,
+        "context_recall": 0.7143
+      }
+    },
+    {
+      "id": 11,
+      "question": "When does the system trigger web search fallback?",
+      "ground_truth": "Web search fallback is triggered only when the local vector store does not return enough relevant documents above the threshold.",
+      "rewritten_query": "When does the system trigger web search fallback",
+      "answer": "According to Benchmark doc: When does the system trigger web search fallback?, Benchmark doc: When does the system trigger web search fallback? When local vector search yields no documents above the similarity threshold, the workflow triggers DuckDuckGo web search. According to Benchmark doc: How does query analysis improve search precision?, Benchmark doc: How does query analysis improve search precision? Query analysis removes conversational filler words like 'please tell me' to produce concise keyword queries.\n\nSources:\n1. Benchmark doc: When does the system trigger web search fallback? - Evaluation Corpus (https://eval.example.com/11)\n2. Benchmark doc: How does query analysis improve search precision? - Evaluation Corpus (https://eval.example.com/14)",
+      "contexts": [
+        "Benchmark doc: When does the system trigger web search fallback? When local vector search yields no documents above the similarity threshold, the workflow triggers DuckDuckGo web search.",
+        "Benchmark doc: How does query analysis improve search precision? Query analysis removes conversational filler words like 'please tell me' to produce concise keyword queries."
+      ],
+      "metrics": {
+        "faithfulness": 0.7872,
+        "answer_relevance": 1.0,
+        "context_relevance": 1.0,
+        "context_recall": 0.5882
+      }
+    },
+    {
+      "id": 12,
+      "question": "What information is included in generated citations?",
+      "ground_truth": "Generated citations include the article title, source, and URL.",
+      "rewritten_query": "What information is included in generated citations",
+      "answer": "According to Benchmark doc: What information is included in generated citations?, Benchmark doc: What information is included in generated citations? Every generated response lists citations with article title, source publication, and canonical URL.\n\nSources:\n1. Benchmark doc: What information is included in generated citations? - Evaluation Corpus (https://eval.example.com/12)\n2. Benchmark doc: What framework coordinates the RAG workflow graph? - Evaluation Corpus (https://eval.example.com/10)\n3. Benchmark doc: How are long documents handled before generating embeddings? - Evaluation Corpus (https://eval.example.com/16)",
+      "contexts": [
+        "Benchmark doc: What information is included in generated citations? Every generated response lists citations with article title, source publication, and canonical URL.",
+        "Benchmark doc: What framework coordinates the RAG workflow graph? LangGraph compiles a StateGraph connecting query analysis, vector search, filtering, and answer generation.",
+        "Benchmark doc: How are long documents handled before generating embeddings? Long texts are broken into chunks of 300 words with 50 words of overlap before generating embeddings."
+      ],
+      "metrics": {
+        "faithfulness": 0.7,
+        "answer_relevance": 1.0,
+        "context_relevance": 1.0,
+        "context_recall": 0.8571
+      }
+    },
+    {
+      "id": 13,
+      "question": "What database stores the relational application data?",
+      "ground_truth": "SQLite or PostgreSQL stores standard relational application data and metadata.",
+      "rewritten_query": "What database stores the relational application data",
+      "answer": "According to Benchmark doc: What database stores the relational application data?, Benchmark doc: What database stores the relational application data? Relational article records and metadata are persisted in SQLite via SQLAlchemy ORM. According to Benchmark doc: What vector database powers the semantic search retrieval?, Benchmark doc: What vector database powers the semantic search retrieval? ChromaDB stores document embeddings with cosine similarity for fast vector retrieval.\n\nSources:\n1. Benchmark doc: What database stores the relational application data? - Evaluation Corpus (https://eval.example.com/13)\n2. Benchmark doc: What vector database powers the semantic search retrieval? - Evaluation Corpus (https://eval.example.com/7)",
+      "contexts": [
+        "Benchmark doc: What database stores the relational application data? Relational article records and metadata are persisted in SQLite via SQLAlchemy ORM.",
+        "Benchmark doc: What vector database powers the semantic search retrieval? ChromaDB stores document embeddings with cosine similarity for fast vector retrieval."
+      ],
+      "metrics": {
+        "faithfulness": 0.7297,
+        "answer_relevance": 1.0,
+        "context_relevance": 1.0,
+        "context_recall": 0.75
+      }
+    },
+    {
+      "id": 14,
+      "question": "How does query analysis improve search precision?",
+      "ground_truth": "Query analysis strips conversational filler phrases and isolates core search keywords.",
+      "rewritten_query": "How does query analysis improve search precision",
+      "answer": "According to Benchmark doc: How does query analysis improve search precision?, Benchmark doc: How does query analysis improve search precision? Query analysis removes conversational filler words like 'please tell me' to produce concise keyword queries. According to Benchmark doc: What does the GET /search endpoint do?, Benchmark doc: What does the GET /search endpoint do? GET /search accepts query and limit parameters and returns matching chunks with similarity scores. According to Benchmark doc: What vector database powers the semantic search retrieval?, Benchmark doc: What vector database powers the semantic search retrieval? ChromaDB stores document embeddings with cosine similarity for fast vector retrieval.\n\nSources:\n1. Benchmark doc: How does query analysis improve search precision? - Evaluation Corpus (https://eval.example.com/14)\n2. Benchmark doc: What does the GET /search endpoint do? - Evaluation Corpus (https://eval.example.com/22)\n3. Benchmark doc: What vector database powers the semantic search retrieval? - Evaluation Corpus (https://eval.example.com/7)",
+      "contexts": [
+        "Benchmark doc: How does query analysis improve search precision? Query analysis removes conversational filler words like 'please tell me' to produce concise keyword queries.",
+        "Benchmark doc: What does the GET /search endpoint do? GET /search accepts query and limit parameters and returns matching chunks with similarity scores.",
+        "Benchmark doc: What vector database powers the semantic search retrieval? ChromaDB stores document embeddings with cosine similarity for fast vector retrieval."
+      ],
+      "metrics": {
+        "faithfulness": 0.7857,
+        "answer_relevance": 1.0,
+        "context_relevance": 1.0,
+        "context_recall": 0.5
+      }
+    },
+    {
+      "id": 15,
+      "question": "What scheduler interval is configured by default for RSS ingestion?",
+      "ground_truth": "The default scheduler interval for background RSS polling is 300 seconds.",
+      "rewritten_query": "What scheduler interval is configured by default for RSS ingestion",
+      "answer": "According to Benchmark doc: What scheduler interval is configured by default for RSS ingestion?, Benchmark doc: What scheduler interval is configured by default for RSS ingestion? The background scheduler polls the RSS feed periodically with a default interval of 300 seconds. According to Benchmark doc: What is the primary RSS feed ingested by default?, Benchmark doc: What is the primary RSS feed ingested by default? The default RSS feed URL in the configuration points to TechCrunch.\n\nSources:\n1. Benchmark doc: What scheduler interval is configured by default for RSS ingestion? - Evaluation Corpus (https://eval.example.com/15)\n2. Benchmark doc: What is the primary RSS feed ingested by default? - Evaluation Corpus (https://eval.example.com/18)",
+      "contexts": [
+        "Benchmark doc: What scheduler interval is configured by default for RSS ingestion? The background scheduler polls the RSS feed periodically with a default interval of 300 seconds.",
+        "Benchmark doc: What is the primary RSS feed ingested by default? The default RSS feed URL in the configuration points to TechCrunch."
+      ],
+      "metrics": {
+        "faithfulness": 0.6875,
+        "answer_relevance": 1.0,
+        "context_relevance": 1.0,
+        "context_recall": 0.875
+      }
+    },
+    {
+      "id": 16,
+      "question": "How are long documents handled before generating embeddings?",
+      "ground_truth": "Long documents are cleaned and split into word chunks with overlapping windows.",
+      "rewritten_query": "How are long documents handled before generating embeddings",
+      "answer": "According to Benchmark doc: How are long documents handled before generating embeddings?, Benchmark doc: How are long documents handled before generating embeddings? Long texts are broken into chunks of 300 words with 50 words of overlap before generating embeddings. According to Benchmark doc: Which embedding model is used for local vector generation?, Benchmark doc: Which embedding model is used for local vector generation? The embedding service uses all-MiniLM-L6-v2 from SentenceTransformers to generate 384-dimensional embeddings. According to Benchmark doc: What vector database powers the semantic search retrieval?, Benchmark doc: What vector database powers the semantic search retrieval? ChromaDB stores document embeddings with cosine similarity for fast vector retrieval.\n\nSources:\n1. Benchmark doc: How are long documents handled before generating embeddings? - Evaluation Corpus (https://eval.example.com/16)\n2. Benchmark doc: Which embedding model is used for local vector generation? - Evaluation Corpus (https://eval.example.com/8)\n3. Benchmark doc: What vector database powers the semantic search retrieval? - Evaluation Corpus (https://eval.example.com/7)",
+      "contexts": [
+        "Benchmark doc: How are long documents handled before generating embeddings? Long texts are broken into chunks of 300 words with 50 words of overlap before generating embeddings.",
+        "Benchmark doc: Which embedding model is used for local vector generation? The embedding service uses all-MiniLM-L6-v2 from SentenceTransformers to generate 384-dimensional embeddings.",
+        "Benchmark doc: What vector database powers the semantic search retrieval? ChromaDB stores document embeddings with cosine similarity for fast vector retrieval."
+      ],
+      "metrics": {
+        "faithfulness": 0.7966,
+        "answer_relevance": 1.0,
+        "context_relevance": 1.0,
+        "context_recall": 0.4444
+      }
+    },
+    {
+      "id": 17,
+      "question": "What distance metric is configured for the ChromaDB collection?",
+      "ground_truth": "Cosine distance is used in ChromaDB to calculate similarity.",
+      "rewritten_query": "What distance metric is configured for the ChromaDB collection",
+      "answer": "According to Benchmark doc: What distance metric is configured for the ChromaDB collection?, Benchmark doc: What distance metric is configured for the ChromaDB collection? The ChromaDB collection is initialized with HNSW cosine distance space. According to Benchmark doc: What vector database powers the semantic search retrieval?, Benchmark doc: What vector database powers the semantic search retrieval? ChromaDB stores document embeddings with cosine similarity for fast vector retrieval.\n\nSources:\n1. Benchmark doc: What distance metric is configured for the ChromaDB collection? - Evaluation Corpus (https://eval.example.com/17)\n2. Benchmark doc: What vector database powers the semantic search retrieval? - Evaluation Corpus (https://eval.example.com/7)\n3. Benchmark doc: How does the filter and rerank node decide which documents to keep? - Evaluation Corpus (https://eval.example.com/20)",
+      "contexts": [
+        "Benchmark doc: What distance metric is configured for the ChromaDB collection? The ChromaDB collection is initialized with HNSW cosine distance space.",
+        "Benchmark doc: What vector database powers the semantic search retrieval? ChromaDB stores document embeddings with cosine similarity for fast vector retrieval.",
+        "Benchmark doc: How does the filter and rerank node decide which documents to keep? The filter node removes documents with similarity below 0.25 and retains the top 3 highest-scoring documents."
+      ],
+      "metrics": {
+        "faithfulness": 0.75,
+        "answer_relevance": 1.0,
+        "context_relevance": 1.0,
+        "context_recall": 0.6667
+      }
+    },
+    {
+      "id": 18,
+      "question": "What is the primary RSS feed ingested by default?",
+      "ground_truth": "The default RSS feed configured is TechCrunch.",
+      "rewritten_query": "the primary RSS feed ingested by default",
+      "answer": "According to Benchmark doc: What is the primary RSS feed ingested by default?, Benchmark doc: What is the primary RSS feed ingested by default? The default RSS feed URL in the configuration points to TechCrunch. According to Benchmark doc: What scheduler interval is configured by default for RSS ingestion?, Benchmark doc: What scheduler interval is configured by default for RSS ingestion? The background scheduler polls the RSS feed periodically with a default interval of 300 seconds.\n\nSources:\n1. Benchmark doc: What is the primary RSS feed ingested by default? - Evaluation Corpus (https://eval.example.com/18)\n2. Benchmark doc: What scheduler interval is configured by default for RSS ingestion? - Evaluation Corpus (https://eval.example.com/15)",
+      "contexts": [
+        "Benchmark doc: What is the primary RSS feed ingested by default? The default RSS feed URL in the configuration points to TechCrunch.",
+        "Benchmark doc: What scheduler interval is configured by default for RSS ingestion? The background scheduler polls the RSS feed periodically with a default interval of 300 seconds."
+      ],
+      "metrics": {
+        "faithfulness": 0.6875,
+        "answer_relevance": 1.0,
+        "context_relevance": 1.0,
+        "context_recall": 1.0
+      }
+    },
+    {
+      "id": 19,
+      "question": "What endpoint processes raw user queries through the agentic RAG workflow?",
+      "ground_truth": "The POST /ask endpoint processes user queries through the LangGraph workflow.",
+      "rewritten_query": "What endpoint processes raw user queries through the agentic RAG workflow",
+      "answer": "According to Benchmark doc: What endpoint processes raw user queries through the agentic RAG workflow?, Benchmark doc: What endpoint processes raw user queries through the agentic RAG workflow? The POST /ask endpoint receives a query and invokes the LangGraph agentic RAG workflow. According to Benchmark doc: What framework coordinates the RAG workflow graph?, Benchmark doc: What framework coordinates the RAG workflow graph? LangGraph compiles a StateGraph connecting query analysis, vector search, filtering, and answer generation. According to Benchmark doc: What does the GET /search endpoint do?, Benchmark doc: What does the GET /search endpoint do? GET /search accepts query and limit parameters and returns matching chunks with similarity scores.\n\nSources:\n1. Benchmark doc: What endpoint processes raw user queries through the agentic RAG workflow? - Evaluation Corpus (https://eval.example.com/19)\n2. Benchmark doc: What framework coordinates the RAG workflow graph? - Evaluation Corpus (https://eval.example.com/10)\n3. Benchmark doc: What does the GET /search endpoint do? - Evaluation Corpus (https://eval.example.com/22)",
+      "contexts": [
+        "Benchmark doc: What endpoint processes raw user queries through the agentic RAG workflow? The POST /ask endpoint receives a query and invokes the LangGraph agentic RAG workflow.",
+        "Benchmark doc: What framework coordinates the RAG workflow graph? LangGraph compiles a StateGraph connecting query analysis, vector search, filtering, and answer generation.",
+        "Benchmark doc: What does the GET /search endpoint do? GET /search accepts query and limit parameters and returns matching chunks with similarity scores."
+      ],
+      "metrics": {
+        "faithfulness": 0.7736,
+        "answer_relevance": 1.0,
+        "context_relevance": 1.0,
+        "context_recall": 1.0
+      }
+    },
+    {
+      "id": 20,
+      "question": "How does the filter and rerank node decide which documents to keep?",
+      "ground_truth": "It removes documents below the similarity threshold and keeps the top most relevant results.",
+      "rewritten_query": "How does the filter and rerank node decide which documents to keep",
+      "answer": "According to Benchmark doc: How does the filter and rerank node decide which documents to keep?, Benchmark doc: How does the filter and rerank node decide which documents to keep? The filter node removes documents with similarity below 0. According to Benchmark doc: How does the system prevent duplicate articles from being ingested?, Benchmark doc: How does the system prevent duplicate articles from being ingested? Duplicate prevention computes a SHA-256 content hash and skips inserting articles that already exist. According to Benchmark doc: When does the system trigger web search fallback?, Benchmark doc: When does the system trigger web search fallback? When local vector search yields no documents above the similarity threshold, the workflow triggers DuckDuckGo web search.\n\nSources:\n1. Benchmark doc: How does the filter and rerank node decide which documents to keep? - Evaluation Corpus (https://eval.example.com/20)\n2. Benchmark doc: How does the system prevent duplicate articles from being ingested? - Evaluation Corpus (https://eval.example.com/9)\n3. Benchmark doc: When does the system trigger web search fallback? - Evaluation Corpus (https://eval.example.com/11)",
+      "contexts": [
+        "Benchmark doc: How does the filter and rerank node decide which documents to keep? The filter node removes documents with similarity below 0.25 and retains the top 3 highest-scoring documents.",
+        "Benchmark doc: How does the system prevent duplicate articles from being ingested? Duplicate prevention computes a SHA-256 content hash and skips inserting articles that already exist.",
+        "Benchmark doc: When does the system trigger web search fallback? When local vector search yields no documents above the similarity threshold, the workflow triggers DuckDuckGo web search."
+      ],
+      "metrics": {
+        "faithfulness": 0.8136,
+        "answer_relevance": 1.0,
+        "context_relevance": 1.0,
+        "context_recall": 0.5455
+      }
+    },
+    {
+      "id": 21,
+      "question": "What does the /health endpoint return?",
+      "ground_truth": "The /health endpoint returns a JSON object with status ok.",
+      "rewritten_query": "What does the /health endpoint return",
+      "answer": "According to Benchmark doc: What does the /health endpoint return?, Benchmark doc: What does the /health endpoint return? GET /health returns a status dictionary indicating the service is healthy. According to Benchmark doc: What does the GET /search endpoint do?, Benchmark doc: What does the GET /search endpoint do? GET /search accepts query and limit parameters and returns matching chunks with similarity scores. According to Benchmark doc: What endpoint processes raw user queries through the agentic RAG workflow?, Benchmark doc: What endpoint processes raw user queries through the agentic RAG workflow? The POST /ask endpoint receives a query and invokes the LangGraph agentic RAG workflow.\n\nSources:\n1. Benchmark doc: What does the /health endpoint return? - Evaluation Corpus (https://eval.example.com/21)\n2. Benchmark doc: What endpoint processes raw user queries through the agentic RAG workflow? - Evaluation Corpus (https://eval.example.com/19)\n3. Benchmark doc: What does the GET /search endpoint do? - Evaluation Corpus (https://eval.example.com/22)",
+      "contexts": [
+        "Benchmark doc: What does the /health endpoint return? GET /health returns a status dictionary indicating the service is healthy.",
+        "Benchmark doc: What endpoint processes raw user queries through the agentic RAG workflow? The POST /ask endpoint receives a query and invokes the LangGraph agentic RAG workflow.",
+        "Benchmark doc: What does the GET /search endpoint do? GET /search accepts query and limit parameters and returns matching chunks with similarity scores."
+      ],
+      "metrics": {
+        "faithfulness": 0.7551,
+        "answer_relevance": 1.0,
+        "context_relevance": 1.0,
+        "context_recall": 0.5714
+      }
+    },
+    {
+      "id": 22,
+      "question": "What does the GET /search endpoint do?",
+      "ground_truth": "The GET /search endpoint performs semantic vector retrieval for a given query string.",
+      "rewritten_query": "What does the GET /search endpoint do",
+      "answer": "According to Benchmark doc: What does the GET /search endpoint do?, Benchmark doc: What does the GET /search endpoint do? GET /search accepts query and limit parameters and returns matching chunks with similarity scores. According to Benchmark doc: What does the /health endpoint return?, Benchmark doc: What does the /health endpoint return? GET /health returns a status dictionary indicating the service is healthy. According to Benchmark doc: What endpoint processes raw user queries through the agentic RAG workflow?, Benchmark doc: What endpoint processes raw user queries through the agentic RAG workflow? The POST /ask endpoint receives a query and invokes the LangGraph agentic RAG workflow.\n\nSources:\n1. Benchmark doc: What does the GET /search endpoint do? - Evaluation Corpus (https://eval.example.com/22)\n2. Benchmark doc: What endpoint processes raw user queries through the agentic RAG workflow? - Evaluation Corpus (https://eval.example.com/19)\n3. Benchmark doc: What does the /health endpoint return? - Evaluation Corpus (https://eval.example.com/21)",
+      "contexts": [
+        "Benchmark doc: What does the GET /search endpoint do? GET /search accepts query and limit parameters and returns matching chunks with similarity scores.",
+        "Benchmark doc: What endpoint processes raw user queries through the agentic RAG workflow? The POST /ask endpoint receives a query and invokes the LangGraph agentic RAG workflow.",
+        "Benchmark doc: What does the /health endpoint return? GET /health returns a status dictionary indicating the service is healthy."
+      ],
+      "metrics": {
+        "faithfulness": 0.7551,
+        "answer_relevance": 1.0,
+        "context_relevance": 1.0,
+        "context_recall": 0.4
+      }
+    }
+  ]
+}

@@ -1,6 +1,6 @@
-from fastapi import FastAPI
+4from fastapi import FastAPI
 
-from app.models.database import engine
+from app.models.database import engine, init_db
 from app.models import content
 from app.api.routes import router
 
@@ -11,7 +11,10 @@ from app.services.rss_monitor import RSSMonitor
 from app.services.scheduler import Scheduler
 from app.models.database import SessionLocal
 import os
+from typing import Optional
 from dotenv import load_dotenv
+
+
 load_dotenv()
 import logging
 
@@ -27,8 +30,8 @@ app = FastAPI(
     version="1.0.0"
 )
 
-# Create database tables
-content.Base.metadata.create_all(bind=engine)
+# Initialize database schema and migrations
+init_db()
 
 # Register API routes
 app.include_router(router)
@@ -89,9 +92,10 @@ def process_content_endpoint(
     title: str,
     source: str,
     text: str,
+    url: Optional[str] = None,
     db: Session = Depends(get_db)
 ):
-    return workflow_engine.process_content(title, source, text, db)
+    return workflow_engine.process_content(title, source, text, db, url=url)
 
 @app.post("/process-rss")
 def process_rss_feed(

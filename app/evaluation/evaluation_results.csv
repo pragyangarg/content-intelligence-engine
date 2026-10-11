@@ -1,0 +1,95 @@
+Question ID,Question,Metric,Version A (Baseline),Version B (Agentic RAG)
+1,What architecture powers the latest NVIDIA AI GPU?,faithfulness,0.7759,0.7407
+1,What architecture powers the latest NVIDIA AI GPU?,answer_relevance,1.0,1.0
+1,What architecture powers the latest NVIDIA AI GPU?,context_relevance,1.0,1.0
+1,What architecture powers the latest NVIDIA AI GPU?,context_recall,0.8462,0.7692
+2,What is the key advantage of fault-tolerant topological qubits in quantum computing?,faithfulness,0.7358,0.7037
+2,What is the key advantage of fault-tolerant topological qubits in quantum computing?,answer_relevance,1.0,1.0
+2,What is the key advantage of fault-tolerant topological qubits in quantum computing?,context_relevance,1.0,1.0
+2,What is the key advantage of fault-tolerant topological qubits in quantum computing?,context_recall,0.6923,0.6923
+3,How did renewable energy installations perform this year?,faithfulness,0.7879,0.7037
+3,How did renewable energy installations perform this year?,answer_relevance,1.0,1.0
+3,How did renewable energy installations perform this year?,context_relevance,1.0,1.0
+3,How did renewable energy installations perform this year?,context_recall,1.0,1.0
+4,How is artificial intelligence transforming enterprise workflows?,faithfulness,0.7705,0.7391
+4,How is artificial intelligence transforming enterprise workflows?,answer_relevance,1.0,1.0
+4,How is artificial intelligence transforming enterprise workflows?,context_relevance,1.0,1.0
+4,How is artificial intelligence transforming enterprise workflows?,context_recall,0.5714,0.5
+5,What model does the content summarizer service utilize?,faithfulness,0.7879,0.78
+5,What model does the content summarizer service utilize?,answer_relevance,1.0,1.0
+5,What model does the content summarizer service utilize?,context_relevance,1.0,1.0
+5,What model does the content summarizer service utilize?,context_recall,0.9,0.9
+6,What model does the sentiment analysis service employ?,faithfulness,0.8028,0.7805
+6,What model does the sentiment analysis service employ?,answer_relevance,1.0,1.0
+6,What model does the sentiment analysis service employ?,context_relevance,1.0,1.0
+6,What model does the sentiment analysis service employ?,context_recall,1.0,1.0
+7,What vector database powers the semantic search retrieval?,faithfulness,0.7647,0.7857
+7,What vector database powers the semantic search retrieval?,answer_relevance,1.0,1.0
+7,What vector database powers the semantic search retrieval?,context_relevance,1.0,1.0
+7,What vector database powers the semantic search retrieval?,context_recall,0.625,0.625
+8,Which embedding model is used for local vector generation?,faithfulness,0.7778,0.7647
+8,Which embedding model is used for local vector generation?,answer_relevance,1.0,1.0
+8,Which embedding model is used for local vector generation?,context_relevance,1.0,1.0
+8,Which embedding model is used for local vector generation?,context_recall,0.7778,0.7778
+9,How does the system prevent duplicate articles from being ingested?,faithfulness,0.8056,0.8103
+9,How does the system prevent duplicate articles from being ingested?,answer_relevance,1.0,1.0
+9,How does the system prevent duplicate articles from being ingested?,context_relevance,1.0,1.0
+9,How does the system prevent duplicate articles from being ingested?,context_recall,0.5333,0.4667
+10,What framework coordinates the RAG workflow graph?,faithfulness,0.7857,0.75
+10,What framework coordinates the RAG workflow graph?,answer_relevance,1.0,1.0
+10,What framework coordinates the RAG workflow graph?,context_relevance,1.0,1.0
+10,What framework coordinates the RAG workflow graph?,context_recall,0.7143,0.7143
+11,When does the system trigger web search fallback?,faithfulness,0.7838,0.7872
+11,When does the system trigger web search fallback?,answer_relevance,1.0,1.0
+11,When does the system trigger web search fallback?,context_relevance,1.0,1.0
+11,When does the system trigger web search fallback?,context_recall,0.5882,0.5882
+12,What information is included in generated citations?,faithfulness,0.717,0.7
+12,What information is included in generated citations?,answer_relevance,1.0,1.0
+12,What information is included in generated citations?,context_relevance,1.0,1.0
+12,What information is included in generated citations?,context_recall,0.8571,0.8571
+13,What database stores the relational application data?,faithfulness,0.7241,0.7297
+13,What database stores the relational application data?,answer_relevance,1.0,1.0
+13,What database stores the relational application data?,context_relevance,1.0,1.0
+13,What database stores the relational application data?,context_recall,0.75,0.75
+14,How does query analysis improve search precision?,faithfulness,0.7973,0.7857
+14,How does query analysis improve search precision?,answer_relevance,1.0,1.0
+14,How does query analysis improve search precision?,context_relevance,1.0,1.0
+14,How does query analysis improve search precision?,context_recall,0.5,0.5
+15,What scheduler interval is configured by default for RSS ingestion?,faithfulness,0.6981,0.6875
+15,What scheduler interval is configured by default for RSS ingestion?,answer_relevance,1.0,1.0
+15,What scheduler interval is configured by default for RSS ingestion?,context_relevance,1.0,1.0
+15,What scheduler interval is configured by default for RSS ingestion?,context_recall,0.875,0.875
+16,How are long documents handled before generating embeddings?,faithfulness,0.7857,0.7966
+16,How are long documents handled before generating embeddings?,answer_relevance,1.0,1.0
+16,How are long documents handled before generating embeddings?,context_relevance,1.0,1.0
+16,How are long documents handled before generating embeddings?,context_recall,0.4444,0.4444
+17,What distance metric is configured for the ChromaDB collection?,faithfulness,0.7321,0.75
+17,What distance metric is configured for the ChromaDB collection?,answer_relevance,1.0,1.0
+17,What distance metric is configured for the ChromaDB collection?,context_relevance,1.0,1.0
+17,What distance metric is configured for the ChromaDB collection?,context_recall,0.6667,0.6667
+18,What is the primary RSS feed ingested by default?,faithfulness,0.7647,0.6875
+18,What is the primary RSS feed ingested by default?,answer_relevance,1.0,1.0
+18,What is the primary RSS feed ingested by default?,context_relevance,1.0,1.0
+18,What is the primary RSS feed ingested by default?,context_recall,1.0,1.0
+19,What endpoint processes raw user queries through the agentic RAG workflow?,faithfulness,0.7656,0.7736
+19,What endpoint processes raw user queries through the agentic RAG workflow?,answer_relevance,1.0,1.0
+19,What endpoint processes raw user queries through the agentic RAG workflow?,context_relevance,1.0,1.0
+19,What endpoint processes raw user queries through the agentic RAG workflow?,context_recall,1.0,1.0
+20,How does the filter and rerank node decide which documents to keep?,faithfulness,0.7917,0.8136
+20,How does the filter and rerank node decide which documents to keep?,answer_relevance,1.0,1.0
+20,How does the filter and rerank node decide which documents to keep?,context_relevance,1.0,1.0
+20,How does the filter and rerank node decide which documents to keep?,context_recall,0.5455,0.5455
+21,What does the /health endpoint return?,faithfulness,0.746,0.7551
+21,What does the /health endpoint return?,answer_relevance,1.0,1.0
+21,What does the /health endpoint return?,context_relevance,1.0,1.0
+21,What does the /health endpoint return?,context_recall,0.5714,0.5714
+22,What does the GET /search endpoint do?,faithfulness,0.7612,0.7551
+22,What does the GET /search endpoint do?,answer_relevance,1.0,1.0
+22,What does the GET /search endpoint do?,context_relevance,1.0,1.0
+22,What does the GET /search endpoint do?,context_recall,0.4,0.4
+
+SUMMARY AVERAGE,,,,
+AVERAGE,-,faithfulness,0.7664,0.7536
+AVERAGE,-,answer_relevance,1.0,1.0
+AVERAGE,-,context_relevance,1.0,1.0
+AVERAGE,-,context_recall,0.7208,0.7111

@@ -38,8 +38,8 @@ class SummarizerService:
 
         result = self.summarizer(
             clean_text,
-            max_length=60,
-            min_length=10,
+            max_length=260,
+            min_length=100,
             do_sample=False
         )
 
